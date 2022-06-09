@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us" xml:lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="icon" type="image/x-icon" href="https://docs.sentinel.thalesgroup.com/favicon.ico" /><title>Sentinel LDK Activation Sample for Java: Readme</title>
+    </head>
+    <body style="font: normal normal normal smaller;font-family: &quot;Times New Roman&quot;, Times, serif;background-color: White;Color: Black;margin: 16px;margin-top: 16px;margin-right: 16px;margin-bottom: 16px;margin-left: 16px;">
+        <h1 style="font: normal normal bold 175% sans-serif;font-size: 175%;font-style: normal;font-variant: normal;font-weight: normal;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #242A75;">Sentinel<sup>®</sup>  Activation Sample for Java: Readme</h1>
+        <hr align="center" width="100%" size="0" />
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Overview</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">This sample demonstrates the use of the Sentinel LDK-EMS web services (product key and fetch pending updates using C2V) for the Java programming language.</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Sentinel LDK-EMS web services are used in conjunction with various Sentinel Licensing API functions to communicate with the Sentinel LDK-EMS Server.</p>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Additional Information</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">If no protection key exists on the user's machine, use the Product Key Activation web service.</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"> If an HL or SL key exists on the machine, use the Fetch Pending Updates by C2V web service. This fetches all pending updates (if such exist), combined into a single package and returned in the V2CP (Vendor-to-Customer package) format. </p>
+        <h3 style="font: normal normal bold 100%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Prerequisites</h3>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"> Java SE 8 (JRE 8 and JDK 8).</p>
+        <h3 style="font: normal normal bold 100%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Supported Operating Systems and Tested Compilers</h3>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Refer to the <i>Sentinel LDK Release Notes</i> - "Supported Platforms for Code Samples" and "Tested Compilers for Code Samples" sections.</p>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Usage Notes</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">This section describes how to customize and compile the sample.</p>
+        <h3 style="font: normal normal bold 100%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Customizing the Sample</h3>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">The Sentinel Java Activation sample contains the Sentinel LDK Java samples, together with the Sentinel LDK Java package and the JRE libraries.</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">To use the Sentinel LDK Java API, copy the JRE libraries and the generated API library to the directory in which the operating
+ system's dynamic libraries are residing.</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">
+            <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Under Linux, copy the JRE libraries to one of the following:</p>
+            <ul style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;list-style-position: outside;text-align: left;margin: 16px;margin-top: 16px;margin-right: 16px;margin-bottom: 16px;margin-left: 16px;list-style-type: circle;">
+                <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                    One of the directories specified in the LD_LIBRARY_PATH variable
+                </li>
+                <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;"><i>/var/hasplm</i>, <i>/usr/local/lib</i>, or <i>/usr/lib</i></li>
+            </ul>
+            <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Under macOS, copy the JRE libraries to the following:</p>
+            <ul style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;list-style-position: outside;text-align: left;margin: 16px;margin-top: 16px;margin-right: 16px;margin-bottom: 16px;margin-left: 16px;list-style-type: circle;">
+                <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;"><i>/var/hasplm</i>, <i>/usr/local/lib</i>, or <i>/usr/lib</i></li>
+            </ul>
+        </p>
+        <h3 style="font: normal normal bold 100%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Compiling the Sample</h3>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Before compiling the samples with <code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">build_samples</code>, set the
+JDK environment variable to the path where Java is installed.<br />For example: <code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">set JDK=p:\java\j2sdk1.8</code><br /><br />To compile the samples, run the <strong>build_samples</strong> script. <br /><br />To run the samples, run the <strong>run_sample</strong> script.
+
+</p>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Description of the Sample Flow</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">The sample consists of two flows: Product Key Activation and Fetch Pending Updates using C2V.</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">The steps performed in Product Key Activation flow are as follows:</p>
+        <ol>
+            <li value="1" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Call the hasp_get_info function to retrieve a fingerprint of the end user's 
+ computer.</li>
+            <li value="2" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Generate an activation V2C file using the fingerprint together with a Product 
+ Key.</li>
+            <li value="3" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Call the hasp_update function to apply the V2C file to the end user's computer.</li>
+        </ol>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">The steps performed in the Fetch Pending Updates using C2V flow are as follows:</p>
+        <ol>
+            <li value="1" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">List the key installed on the user's machine.</li>
+            <li value="2" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Fetch the C2V for the selected key and use it to create a web service request for Fetch Pending Updates using C2V.</li>
+            <li value="3" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Handle the activation process by calling the LDK-EMS web server, fetching the V2CP, and updating the key using Licensing API.</li>
+        </ol>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Fetching the Header 'polling-frequency' from the Web Service Response</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Method fetchPollingFreqFromResponse(HttpURLConnection conn) can be used to read the header <strong>polling-frequency</strong> value from the web service response. </p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"> If you want to write a routine to periodically call the Fetch Pending Updates using C2V web service to check for updates, you can use this value to set the polling frequency.</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">For more information, see the <a href="https://docs.sentinel.thalesgroup.com/ldk/LDKdocs/WebHelpWS/Default.htm#cshid=1003" target="_blank" title="Sentinel LDK – EMS Web Services Guide" alt="Sentinel LDK–EMS Web Services Guide" style="text-decoration: none;">Sentinel LDK–EMS  Web Services Guide</a>.</p>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Components</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">The Activation sample contains the following components:</p>
+        <table cellspacing="0" cellpadding="4" border="1" style="border-collapse: collapse;border-left-style: none;border-left-color: #000000;border-left-width: 1px;border-right-style: none;border-right-color: #000000;border-right-width: 1px;border-top-style: solid;border-top-color: #d5d5d5;border-top-width: 1px;border-bottom-style: solid;border-bottom-color: #d5d5d5;border-bottom-width: 1px;margin-top: 8pt;margin-bottom: 8pt;border-spacing: 0px 0px;border-spacing-x: 0px;border-spacing-y: 0px;margin-left: auto;margin-right: auto;" class="TableStyle-Page">
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <col class="TableStyle-Page-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Page-Head-Header1">
+                    <th class="TableStyle-Page-HeadE-Column1-Header1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;background-color: #f6f5f5;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;text-align: left;"><b><span>Operating System</span></b>
+                    </th>
+                    <th class="TableStyle-Page-HeadE-Column1-Header1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;background-color: #f6f5f5;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;text-align: left;"><b><span>Directory or File</span></b>
+                    </th>
+                    <th class="TableStyle-Page-HeadD-Column1-Header1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;background-color: #f6f5f5;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;text-align: left;"><b><span>Description</span></b>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><span>All</span>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">classes</code>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyD-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;"><span>Directory that contains the Activation Sample compiled files</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><span>All</span>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">src</code>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyD-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;"><span>Directory that contains the Activation Java sources</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><span>Windows:<br />Mac:<br />Linux:</span>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">build_sample.bat<br />      build_sample.sh<br />      build_sample.sh</code>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyD-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;"><span>Batch file for building the Java samples</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><span>All</span>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">activation.properties</code>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyD-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;">
+                        <p valign="top" style="font-family: &quot;Times New Roman&quot;, Times, serif;">This file contains the folllowing properties:</p>
+                        <p valign="top" style="font-family: &quot;Times New Roman&quot;, Times, serif;">
+                            <ul style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;list-style-type: square;list-style-position: outside;text-align: left;margin: 16px;margin-top: 16px;margin-right: 16px;margin-bottom: 16px;margin-left: 16px;">
+                                <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">LDK-EMS Server URL</li>
+                                <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Product key for activation</li>
+                                <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Customer registration information</li>
+                            </ul>
+                        </p>
+                        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Modify the properties as required. Save the file using the UTF-8 format.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><span>Windows:<br />Mac:<br />Linux:</span>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">run_sample.bat<br />run_sample.sh<br />        run_sample.sh</code>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyD-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;"> <span> 
+      Batch file for running the activation sample.<br /><br /><b>Note</b>: (For Windows) If proxy settings are required, update the batch file with this line: <br />        (Enter this as a single line of text .Modify the <i>host</i>, <i>port</i>, <i>user</i>, and <i>password</i> parameters as required.)<br /><p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">java -Dhttp.proxyHost=<i>host</i> -Dhttp.proxyPort=<i>port</i> 
+        -Dhttp.proxyUser=<i>user</i> -Dhttp.proxyPassword=<i>password</i> -classpath 
+ ./classes;hasp-srm-api.jar ActivationSample</code></p>
+      For https, replace <code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">Dhttp</code> with <code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">Dhttps</code>.
+      </span> </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><span>All</span>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">hasp-srm-api.jar</code>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyD-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;"><span>JAR file with the compiled Sentinel LDK Runtime
+ Java package</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><span>Windows:<br />Mac:</span>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">HASPJava.dll<br />libHASPJava.dylib<br /></code>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyD-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;"><span>Sentinel LDK Runtime JRE library for x86</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><span>Windows:<br />Mac:<br />Linux:</span>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">HASPJava_x64.dll<br />libHASPJava.dylib<br />libHASPJava_x86_64.so</code>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyD-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;"><span>Sentinel LDK Runtime JRE library for x64</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><span>Windows:<br />Mac:<br /></span>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyE-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">hasp_windows_demo.dll<br />hasp_darwin_demo.dylib<br /></code>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyD-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-bottom-width: 1px;border-bottom-color: #d5d5d5;border-bottom-style: solid;"><span>Sentinel LDK Runtime API library for x86</span>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Page-Body-Body1">
+                    <td valign="top" class="TableStyle-Page-BodyB-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><span>Windows:<br />Mac:<br />Linux:</span>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyB-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;border-right-width: 1px;border-right-color: #d5d5d5;border-right-style: solid;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">hasp_windows_x64_demo.dll<br />hasp_darwin_demo.dylib<br />      libhasp_linux_x86_64.demo.so</code>
+                    </td>
+                    <td valign="top" class="TableStyle-Page-BodyA-Column1-Body1" style="padding-left: 6pt;padding-right: 6pt;padding-top: 6pt;padding-bottom: 6pt;"><span>Sentinel LDK Runtime API library for x64</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><span style="font-family: 'Palatino Linotype';color: #000000;">Copyright © 2022 Thales Group. All rights reserved. <a href="https://supportportal.thalesgroup.com/csm?id=sentinel" target="_blank" style="text-decoration: none;">Support</a>&#160;&#160;&#160;<br /></span>
+        </p>
+        <div align="right">DocID 204 Revision 2109-1</div>
+    </body>
+</html>

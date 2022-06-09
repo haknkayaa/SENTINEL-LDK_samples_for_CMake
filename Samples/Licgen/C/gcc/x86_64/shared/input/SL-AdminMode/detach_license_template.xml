@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+ <sentinel_ldk:license schema_version="1.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:sentinel_ldk="http://www.safenet-inc.com/sentinelldk">
+    <enforcement_type>SL-AdminMode</enforcement_type>
+    <product>
+      <id>123</id>
+      <name>Sample Product 123</name>
+      <feature>
+        <id>1000</id>
+        <name>Sample Feature 1000</name>
+        <license_properties>
+          <perpetual/>
+          <concurrency>
+            <count>10</count>
+            <count_criteria>Per Station</count_criteria>
+            <network_access>Yes</network_access>
+			<detachable>Yes</detachable>
+          </concurrency>
+          <remote_desktop_access>No</remote_desktop_access>
+          <virtual_machine_access>Yes</virtual_machine_access>
+        </license_properties>
+      </feature>
+    </product>
+    <memory>
+      <ro_memory_segment>
+         <offset>0</offset>
+         <content>U2FtcGxlIFJlYWQgT25seSBNZW1vcnk=</content>
+      </ro_memory_segment>
+      <!-- Add as many read only memory segment as many you want -->
+      <rw_memory_segment>
+         <offset>24</offset>
+         <content>U2FtcGxlIFJlYWQgV3JpdGUgTWVtb3J5</content>
+      </rw_memory_segment>
+      <!-- Add as many read write memory segment as many you want -->
+    </memory>
+ </sentinel_ldk:license>

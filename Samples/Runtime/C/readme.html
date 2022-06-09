@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us" xml:lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="icon" type="image/x-icon" href="https://docs.sentinel.thalesgroup.com/favicon.ico" /><title>Sentinel LDK Licensing API - C Sample for Linux: Readme</title>
+    </head>
+    <body style="font: normal normal normal smaller;font-family: &quot;Times New Roman&quot;, Times, serif;background-color: White;Color: Black;margin: 16px;margin-top: 16px;margin-right: 16px;margin-bottom: 16px;margin-left: 16px;">
+        <h1 style="font: normal normal bold 175% sans-serif;font-size: 175%;font-style: normal;font-variant: normal;font-weight: normal;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #242A75;">Sentinel<sup>®</sup> LDK Licensing API - C Sample for Linux: Readme</h1>
+        <hr align="center" width="100%" size="0" />
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Overview</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">This sample demonstrates the use of Sentinel LDK Licensing API when working in the C language.</p>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Additional Information</h2>
+        <h3 style="font: normal normal bold 100%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Prerequisites</h3>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">GNU Compiler (gcc).</p>
+        <h3 style="font: normal normal bold 100%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Supported Operating Systems and Tested Compilers</h3>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Refer to the <i>Sentinel LDK Release Notes</i> - "Supported Platforms for Code Samples" and "Tested Compilers for Code Samples" sections.</p>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Usage Notes</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">This section describes how to compile the sample.</p>
+        <!--
+<h3>Customizing the Sample</h3>
+<strong><font color="#FF0000">To implement the Licensing API extracted by the
+Master wizard:</font></strong>
+<ul>
+  <li><font color="#FF0000">Copy the API file to your home directory.</font></li>
+</ul>
+<font color="#FF0000"><strong>To customize the Batch Code used by the Demo:</strong>
+</font>
+<ol>
+  <li><font color="#FF0000">From the menu bar, select <strong>File &gt; User Environment</strong>.</font></li>
+  <font color="#FF0000"><br>
+  <br>
+  </font>
+  <li><font color="#FF0000">In the navigation pane, click the <strong>Methods</strong>
+    icon.</font></li>
+  <font color="#FF0000"><br>
+  <br>
+  </font>
+  <li><font color="#FF0000">Under <strong>Database Methods &gt; On Startup</strong>,
+    replace the Vendor Code in the constants <em>kTestVendorCode1</em> through
+    <em>kTestVendorCode14</em>.</font></li>
+</ol>
+<strong><font color="#FF0000">To customize the Licensing API routines called by
+the Demo:</font></strong>
+<ol>
+  <li><font color="#FF0000">From the menu bar, select <strong>File &gt; User Environment</strong>.</font></li>
+  <font color="#FF0000"><br>
+  <br>
+  </font>
+  <li><font color="#FF0000">In the navigation pane, click the <strong>Methods</strong>
+    icon.</font></li>
+  <font color="#FF0000"><br>
+  <br>
+  </font>
+  <li><font color="#FF0000">Under <strong>Project Methods</strong>, modify the
+    contents of <strong>API Demo HASP</strong>. This is the main procedure that
+    is used to call all other procedures to be executed.</font></li>
+</ol>
+-->
+        <h3 style="font: normal normal bold 100%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Compiling the Sample</h3>
+        <ol>
+            <li value="1" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Select the folder with the desired architecture.</li>
+            <br />
+            <li value="2" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Move to the <strong>static</strong> directory.
+Call <strong>./mk</strong> in the command line to build the static library samples
+<strong>hasp_demo</strong> and <strong>hasp_update</strong>.</li>
+            <br />
+            <li value="3" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Move to the <strong>shared</strong> directory.
+Call <strong>./mk</strong> in the command line to build the shared library (.so)
+samples <strong>hasp_demo</strong> and <strong>hasp_update</strong>.</li>
+        </ol>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Description of the Sample Flow</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">The sample consists of several functions. The default flow is as follows:</p>
+        <ol>
+            <li value="1" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Log into the key.</li>
+            <br />
+            <li value="2" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Extract information from the key. The sample reads and writes some information to and from the key.</li>
+            <br />
+            <li value="3" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Encrypt and decrypt some test data.</li>
+            <br />
+            <li value="4" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Log out from the key.</li>
+        </ol>
+        <br />
+        <br />
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><span style="font-family: 'Palatino Linotype';color: #000000;">Copyright © 2022 Thales Group. All rights reserved. <a href="https://supportportal.thalesgroup.com/csm?id=sentinel" target="_blank" style="text-decoration: none;">Support</a>&#160;&#160;&#160;<br /></span>
+        </p>
+        <div align="right">DocID 234 Revision 2003-2</div>
+    </body>
+</html>

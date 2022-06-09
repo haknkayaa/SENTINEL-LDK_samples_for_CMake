@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-us" xml:lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="icon" type="image/x-icon" href="https://docs.sentinel.thalesgroup.com/favicon.ico" /><title>Sentinel LDK Licensing API - Java Sample: Readme</title>
+    </head>
+    <body style="font: normal normal normal smaller;font-family: &quot;Times New Roman&quot;, Times, serif;background-color: White;Color: Black;margin: 16px;margin-top: 16px;margin-right: 16px;margin-bottom: 16px;margin-left: 16px;">
+        <h1 style="font: normal normal bold 175% sans-serif;font-size: 175%;font-style: normal;font-variant: normal;font-weight: normal;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #242A75;">Sentinel<sup>®</sup> LDK Licensing API - Java Sample: Readme</h1>
+        <hr align="center" width="100%" size="0" />
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">This sample demonstrates the use of Sentinel LDK Licensing (Run-time) API when working in the Java language.</p>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Supported Operating Systems and Tested Compilers</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Refer to the <i>Sentinel LDK Release Notes</i> - "Supported Platforms for Code Samples" and "Tested Compilers for Code Samples" sections.</p>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Components</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">This version contains the following components:</p>
+        <br />
+        <table cellspacing="0" cellpadding="4" border="0" style="border-collapse: collapse;border-left-style: none;border-left-color: #000000;border-left-width: 1px;border-right-style: none;border-right-color: #000000;border-right-width: 1px;border-top-style: none;border-top-width: 1px;border-bottom-style: none;border-bottom-width: 1px;margin-left: 0pt;margin-right: 0pt;margin-top: 8pt;margin-bottom: 8pt;border-spacing: 0px 0px;border-spacing-x: 0px;border-spacing-y: 0px;" class="TableStyle-Page_no_borders">
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" colspan="2" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;"><b>Common to All Operating Systems</b>
+                </td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">hasp_demo.java</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Java hasp_demo program</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">hasp_update.java</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Java hasp_update program</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;">Aladdin</td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Directory containing the Sentinel LDK Java sources</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">hasp-srm-api.jar</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">JAR file with the compiled Sentinel LDK Java package</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">hasp-srm-demo.jar</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">JAR file with the compiled Java samples</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><b>Windows</b>
+                </td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">build_samples.bat</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Batch file for building the Java sample</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">HASPJava.dll</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">JNI library for Win32</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">HASPJava_x64.dll</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">JNI library for Windows x64</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">hasp_windows_demo.dll</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Run-time API DLL for Win32</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">hasp_windows_x64_demo.dll</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Run-time API DLL for Windows x64</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><b>Mac</b>
+                </td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">build_samples.sh</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Batch file for building the Java samples</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">libHASPJava.dylib</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Universal library containing JNI libraries for various platforms</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">libHASPJava.jnilib</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Universal library containing JNI libraries for various platforms</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">hasp_darwin_demo.dylib</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Universal binary containing Run-time API dylibs for various platforms</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><b>Linux (Intel and ARM)</b>
+                </td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">build_samples.sh</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Batch file for building the Java samples</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">libHASPJava_x86_64.so</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">JNI library for Linux x64</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">libhasp_linux_x86_64_demo.so</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Run-time API DLL for Linux x64</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">libHASPJava_armhf.so</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">JNI library for Linux armhf</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">libHASPJava_arm64.so</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">JNI library for Linux arm64</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">libhasp_linux_armhf_demo.so</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Run-time API DLL for Linux armhf</td>
+            </tr>
+            <tr class="TableStyle-Page_no_borders-Body-Body1">
+                <td valign="top" class="TableStyle-Page_no_borders-BodyE-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;border-right-width: 1px;border-right-color: #000000;border-right-style: none;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">libhasp_linux_arm64_demo.so</code>
+                </td>
+                <td valign="top" class="TableStyle-Page_no_borders-BodyD-Column1-Body1" style="padding-left: 4pt;padding-right: 4pt;padding-top: 3pt;padding-bottom: 3pt;border-bottom-width: 1px;border-bottom-color: #000000;border-bottom-style: none;">Run-time API DLL for Linux arm64</td>
+            </tr>
+        </table>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Usage Notes</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">This section describes how to customize and how to compile the sample.</p>
+        <h3 style="font: normal normal bold 100%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Customizing the Sample</h3>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">The Sentinel LDK Java API package contains the Sentinel LDK Java samples, together with
+the Sentinel LDK Java package and the JNI libraries.</p>
+        <h4>Using the Java API</h4>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">To use the Sentinel LDK Java API:</p>
+        <ol>
+            <li value="1" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Copy the JNI libraries and the generated API library to the directory in which the operating system's dynamic libraries reside.</li>
+            <li value="2" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Place the Run-time API libraries in one of the following locations on the machine where the protected application is installed.</p>
+                <ul style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;list-style-type: square;list-style-position: outside;text-align: left;margin: 16px;margin-right: 16px;margin-left: 16px;">
+                    <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Under Windows:</p>
+                        <ul style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;list-style-position: outside;text-align: left;margin: 16px;margin-right: 16px;margin-left: 16px;list-style-type: circle;">
+                            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">In the process directory (where the application executable resides)</p>
+                            </li>
+                            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">In the DLL directory (where the Java DLL resides, if any)</p>
+                            </li>
+                            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">In the Windows System directory (for example: <i>c:\Windows\System32\</i> or c:\Windows\SysWOW64)</p>
+                            </li>
+                            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">In the Windows directory (for example: <i>c:\Windows\</i>)</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Under Linux</p>
+                        <ul style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;list-style-position: outside;text-align: left;margin: 16px;margin-right: 16px;margin-left: 16px;list-style-type: circle;">
+                            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">In the process directory (where the application executable resides)</p>
+                            </li>
+                            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">
+									In one of the directories specified in the LD_LIBRARY_PATH variable
+								</p>
+                            </li>
+                            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">In <i>/var/hasplm</i>, <i>/usr/local/lib</i>, or <i>/usr/lib</i></p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;list-style-type: square;list-style-position: outside;text-align: left;margin: 16px;margin-right: 16px;margin-left: 16px;">
+                    <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Under macOS</p>
+                        <ul style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;list-style-position: outside;text-align: left;margin: 16px;margin-right: 16px;margin-left: 16px;list-style-type: circle;">
+                            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"> In the process directory (where the application executable resides)</p>
+                            </li>
+                            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">
+									In one of the directories specified in the LD_LIBRARY_PATH variable</p>
+                            </li>
+                            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">
+								In one of the directories specified in the DYLD_LIBRARY_PATH variable</p>
+                            </li>
+                            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">In <i>/var/hasplm</i>, <i>/usr/local/lib</i>, or <i>/usr/lib</i></p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><b>Note:</b> With a language interpreter (such as java.exe), the application is the interpreter itself. In this case, the process directory is the directory where <b>java.exe</b> resides, and not where the Java JAR file resides.</p>
+            </li>
+        </ol>
+        <h3 style="font: normal normal bold 100%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Compiling the Samples</h3>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Before compiling the samples with <code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">build_samples</code>, set the
+JDK environment variable to the path where Java is installed.</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">For example, for Windows, "set <code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">JDK=p:\java\j2sdk1.8</code>".</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">To compile the samples, run the <code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">build_samples</code> script.</p>
+        <h3 style="font: normal normal bold 100%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Running the Samples</h3>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">To run the samples, enter one of the following:</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">java hasp_demo</code>
+        </p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">java hasp_update</code>
+        </p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">To run the precompiled samples from the hasp-srm-demo.jar archive under Windows, enter one of the following:</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">java -cp .;hasp-srm-api.jar;hasp-srm-demo.jar hasp_demo</code>
+        </p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">java -cp .;hasp-srm-api.jar;hasp-srm-demo.jar hasp_update</code>
+        </p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">To run the precompiled samples from the hasp-srm-demo.jar archive under Mac or Linux, enter one of the following:</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">java -cp .:hasp-srm-api.jar:hasp-srm-demo.jar hasp_demo</code>
+        </p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><code style="font-family: &quot;Courier New&quot;, Courier, monospace;font-size: 98%;">java -cp .:hasp-srm-api.jar:hasp-srm-demo.jar hasp_update</code>
+        </p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">After you have generated your vendor-specific libraries (using the Master Wizard), copy the C run-time libraries to the folder in which your source code is stored. </p>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Description of the Sample Flow</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">The sample consists of several functions. The default flow is as follows:</p>
+        <ol>
+            <li value="1" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Log into the key.</li>
+            <br />
+            <li value="2" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Extract information from the key. The sample reads and writes some information to and from the key.</li>
+            <br />
+            <li value="3" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">Encrypt and decrypt some test data.</li>
+        </ol>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><span style="font-family: 'Palatino Linotype';color: #000000;">Copyright © 2022 Thales Group. All rights reserved. <a href="https://supportportal.thalesgroup.com/csm?id=sentinel" target="_blank" style="text-decoration: none;">Support</a>&#160;&#160;&#160;<br /></span>
+        </p>
+        <div align="right">DocID 104 Revision 2104-1</div>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us" xml:lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="icon" type="image/x-icon" href="https://docs.sentinel.thalesgroup.com/favicon.ico" /><title>Sentinel LDK Android Envelope Jar and Sample: Readme</title>
+    </head>
+    <body style="font: normal normal normal smaller;font-family: &quot;Times New Roman&quot;, Times, serif;background-color: White;Color: Black;margin: 16px;margin-top: 16px;margin-right: 16px;margin-bottom: 16px;margin-left: 16px;">
+        <h1 style="font: normal normal bold 175% sans-serif;font-size: 175%;font-style: normal;font-variant: normal;font-weight: normal;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #242A75;">Sentinel® LDK&#160;Envelope - Protecting Java Applications that Use Reflection: Readme</h1>
+        <hr align="center" width="100%" size="0" />
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">This document describes using Sentinel LDK Envelope to protect a Java application that uses reflection.</p>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Overview</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Sentinel LDK Envelope makes use of reflection. Therefore, there is a limitation on protecting Java applications that use reflection APIs, such as applications using the Spring Framework. </p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">However, these applications can be protected using a combination of Sentinel LDK Envelope and Sentinel LDK Data Protection (dfcrypt) utility.</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Use the dfcrypt utility with the Version 2 data protection mode to protect Java class files. The encrypted class files can be decrypted at runtime by a DLL or shared object (Linux) that has been protected with Envelope with Data File Protection Version 2 enabled.</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">This process can be performed on a Windows or Linux platform.</p>
+        <ul style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;list-style-type: square;list-style-position: outside;text-align: left;margin: 16px;margin-top: 16px;margin-right: 16px;margin-bottom: 16px;margin-left: 16px;">
+            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">To see how to protect the Java application under Linux, see the appendix in the Sentinel LDK Envelope for Linux User Guide.</li>
+            <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"> </p>
+            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">To see how to protect the Java application under Windows, see the topic "Protecting Java Applications that Use Reflection" in the Sentinel LDK Envelope help system for Windows.</li>
+        </ul>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"> </p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><span style="font-family: 'Palatino Linotype';color: #000000;">Copyright © 2022 Thales Group. All rights reserved. <a href="https://supportportal.thalesgroup.com/csm?id=sentinel" target="_blank" style="text-decoration: none;">Support</a>&#160;&#160;&#160;<br /></span>
+        </p>
+        <div align="right">DocID 249 Revision 2003-2</div>
+    </body>
+</html>

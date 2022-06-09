@@ -1,0 +1,21 @@
+#!/bin/sh
+
+case $(uname -m) in
+   x86_64);;
+   *) echo "This script is intended to be executed on a ix86 system."
+      echo "Running it on another platform probably doesn't work unless"
+      echo "a cross compiler is installed (and this script is modified"
+      echo "to reflect this)."
+      exit 1;;
+esac
+
+clear
+rm sntl_adminapi_demo
+
+echo --------------------------------------------------------------------------
+gcc ../../../sntl_adminapi_demo.c -Wl,-rpath,'$ORIGIN' libsntl_adminapi_linux_x86_64.so -lpthread -o sntl_adminapi_demo
+ls -l sntl_adminapi_demo
+echo --------------------------------------------------------------------------
+
+echo
+sync

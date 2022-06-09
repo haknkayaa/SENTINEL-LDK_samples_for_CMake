@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+ <sentinel_ldk:license schema_version="1.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:sentinel_ldk="http://www.safenet-inc.com/sentinelldk">
+    <enforcement_type>SL-UserMode</enforcement_type>
+    <product>
+      <id>123</id>
+      <name>Sample Product 123</name>
+      <feature>
+        <id>1000</id>
+        <name></name>
+        <license_properties>
+          <perpetual/>          
+          <remote_desktop_access>Yes</remote_desktop_access>
+          <virtual_machine_access>No</virtual_machine_access>
+        </license_properties>
+      </feature>
+    </product>
+    <product>
+      <id>10</id>
+      <name></name>
+      <feature>
+        <id>10</id>
+        <name>Sample Feature 1000</name>
+        <license_properties>
+          <perpetual/>          
+          <remote_desktop_access>Yes</remote_desktop_access>
+          <virtual_machine_access>Yes</virtual_machine_access>
+        </license_properties>
+      </feature>
+    </product>
+    <product>
+      <id>1</id>
+      <name></name>
+      <feature>
+        <id>1</id>
+        <name></name>
+        <license_properties>
+          <expiration_date>2025-12-31</expiration_date>          
+          <remote_desktop_access>Yes</remote_desktop_access>
+          <virtual_machine_access>Yes</virtual_machine_access>
+        </license_properties>
+      </feature>
+      <feature>
+        <id>2</id>
+        <name>feature 2</name>
+        <license_properties>
+          <execution_count>7</execution_count>     
+          <remote_desktop_access>Yes</remote_desktop_access>
+          <virtual_machine_access>Yes</virtual_machine_access>
+        </license_properties>
+      </feature>
+      <feature>
+        <id>3</id>
+        <name>feature 3</name>
+        <license_properties>
+          <days_to_expiration>30</days_to_expiration>         
+          <remote_desktop_access>No</remote_desktop_access>
+          <virtual_machine_access>Yes</virtual_machine_access>
+        </license_properties>
+      </feature>
+      <feature>
+        <id>11</id>
+        <name>feature 11</name>
+        <license_properties>
+          <perpetual/>          
+          <remote_desktop_access>No</remote_desktop_access>
+          <virtual_machine_access>Yes</virtual_machine_access>
+        </license_properties>
+      </feature>
+      <feature>
+        <id>12</id>
+        <name>feature 12</name>
+        <license_properties>
+          <expiration_date>2025-12-31</expiration_date>         
+          <remote_desktop_access>No</remote_desktop_access>
+          <virtual_machine_access>Yes</virtual_machine_access>
+        </license_properties>
+      </feature>
+      <feature>
+        <id>13</id>
+        <name>feature 13</name>
+        <license_properties>
+          <expiration_date>2030-12-31</expiration_date>
+          <remote_desktop_access>No</remote_desktop_access>
+          <virtual_machine_access>Yes</virtual_machine_access>
+        </license_properties>
+      </feature>
+    </product>
+    <product>
+      <id>110</id>
+      <name>product 110</name>
+      <feature>
+        <id>110</id>
+        <name>feature 110</name>
+        <license_properties>
+          <perpetual/>          
+          <remote_desktop_access>Yes</remote_desktop_access>
+          <virtual_machine_access>Yes</virtual_machine_access>
+        </license_properties>
+      </feature>
+    </product>
+   <memory>
+      <ro_memory_segment>
+         <offset>0</offset>
+         <content>U2FtcGxlIFJlYWQgT25seSBNZW1vcnk=</content>
+      </ro_memory_segment>
+      <!-- Add as many read only memory segment as many you want -->
+      <rw_memory_segment>
+         <offset>24</offset>
+         <content>U2FtcGxlIFJlYWQgV3JpdGUgTWVtb3J5</content>
+      </rw_memory_segment>
+      <!-- Add as many read write memory segment as many you want -->
+   </memory>
+ </sentinel_ldk:license>

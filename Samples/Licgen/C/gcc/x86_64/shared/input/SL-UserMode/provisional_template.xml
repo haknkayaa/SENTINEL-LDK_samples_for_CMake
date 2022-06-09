@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sentinel_ldk:license schema_version="1.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:sentinel_ldk="http://www.safenet-inc.com/sentinelldk">
+   <enforcement_type>SL-UserMode</enforcement_type>
+   <product>
+      <id>2</id>
+      <name>Sample Product 2</name>
+      <feature>
+         <id>10</id>
+         <name>Sample Feature 10</name>
+         <license_properties>
+            <days_to_expiration>14</days_to_expiration>
+            <remote_desktop_access>Yes</remote_desktop_access>
+         </license_properties>
+      </feature>
+   </product>
+</sentinel_ldk:license>

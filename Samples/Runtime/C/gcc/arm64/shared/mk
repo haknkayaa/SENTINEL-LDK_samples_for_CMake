@@ -1,0 +1,17 @@
+#!/bin/sh
+
+clear
+rm hasp_demo
+rm hasp_update
+
+echo --------------------------------------------------------------------------
+aarch64-linux-gnu-gcc ../../../hasp_demo.c -I../../.. -Wl,-rpath,'$ORIGIN' libhasp_linux_arm64_demo.so -lpthread -o hasp_demo
+ls -l hasp_demo
+echo --------------------------------------------------------------------------
+aarch64-linux-gnu-gcc ../../../hasp_update.c -I../../.. -Wl,-rpath,'$ORIGIN' libhasp_linux_arm64_demo.so -lpthread -o hasp_update
+ls -l hasp_update
+echo --------------------------------------------------------------------------
+
+echo
+sync
+

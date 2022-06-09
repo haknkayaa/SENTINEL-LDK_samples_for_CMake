@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <sentinel_ldk:license schema_version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sentinel_ldk="http://www.safenet-inc.com/sentinelldk">
+    <enforcement_type>HL</enforcement_type>
+    <dynamic_resource>
+	  <!-- Create readonly dynamic memory file-id 1, In given case file size will be calculated based on offset + segment_size-->
+      <isv_memory attribute="ro">
+         <file_id>1</file_id>
+		 <segment>
+			<offset>0</offset>
+			<!-- base64 encoded data - "read only dynamic recource" -->
+			<content>cmVhZCBvbmx5IGR5bmFtaWMgcmVzb3VyY2U=</content>		
+		 </segment>
+		 <!-- Add as many segment node as many you want into this dynamic memory-->
+      </isv_memory>
+      <!-- Create 200 byte size empty readwrite dynamic memory file-id 2-->
+      <isv_memory attribute="rw">
+	     <file_id>2</file_id>
+		 <size>200</size>
+      </isv_memory>
+	  <!-- Create readwrite-once dynamic memory file-id 3, In given case file size will be calculated based on offset + segment_size-->
+      <isv_memory attribute="rwo">
+         <file_id>3</file_id>
+		 <segment>
+			<offset>0</offset>
+			<!--base64 encoded data - "read write once dynamic resource"-->
+			<content>cmVhZCB3cml0ZSBvbmNlIGR5bmFtaWMgcmVzb3VyY2U=</content>		
+		 </segment>
+		 <!-- Add as many segment node as many you want into this dynamic memory-->
+      </isv_memory>
+    </dynamic_resource>	
+ </sentinel_ldk:license>

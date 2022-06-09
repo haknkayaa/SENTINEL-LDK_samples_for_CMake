@@ -1,0 +1,38 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "82f3940a9821e92db72fcacee7f8651fbb1527d6"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "sample/1.0.0": {
+        "dependencies": {
+          "hasp_net_core": "2.0.5"
+        },
+        "runtime": {
+          "sample.dll": {}
+        }
+      },
+      "hasp_net_core/2.0.5": {
+        "runtime": {
+          "lib/netcoreapp2.0/hasp_net_core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "sample/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "hasp_net_core/2.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QKRcEoYTXJCCQgEJbaA04VOThkigjlRfAwQtUSAtm9S3BsfWlQABmyVCrSBIlvsLQq9mVtf2/8S1T0nbMQcT7g==",
+      "path": "hasp_net_core/2.0.5",
+      "hashPath": "hasp_net_core.2.0.5.nupkg.sha512"
+    }
+  }
+}

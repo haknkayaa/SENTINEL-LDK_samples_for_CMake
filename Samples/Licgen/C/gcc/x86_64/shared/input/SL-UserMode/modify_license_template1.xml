@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sentinel_ldk:license schema_version="1.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:sentinel_ldk="http://www.safenet-inc.com/sentinelldk">
+   <acknowledgement_request>Yes</acknowledgement_request>
+   <enforcement_type>SL-UserMode</enforcement_type>
+   <product>
+      <id>1</id>
+      <name>Sample Product</name>
+      <feature>
+         <id>1</id>
+         <name>Sample Feature</name>
+         <license_properties action="set">
+            <expiration_date>2091-12-31</expiration_date>
+         </license_properties>
+      </feature>
+      <feature>
+         <id>2</id>
+         <license_properties>
+            <execution_count action="add">30</execution_count>
+         </license_properties>
+      </feature>
+      <feature>
+         <id>3</id>
+         <license_properties action="set">
+         <perpetual />
+         </license_properties>
+      </feature>
+      <feature>
+         <id>5</id>
+         <name>Sample Feature 5</name>
+         <license_properties>
+            <days_to_expiration>30</days_to_expiration>
+         </license_properties>
+      </feature>
+      <feature>
+         <id>12</id>
+         <license_properties>
+            <expiration_date action="add">30</expiration_date>
+         </license_properties>
+      </feature>
+      <feature>
+         <id>13</id>
+         <license_properties>
+            <expiration_date action="sub">30</expiration_date>
+         </license_properties>
+      </feature>
+   </product>
+</sentinel_ldk:license>

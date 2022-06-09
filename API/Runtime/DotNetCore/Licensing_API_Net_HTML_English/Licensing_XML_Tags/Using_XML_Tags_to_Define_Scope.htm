@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_SIDE_NAV" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="XML Usage Samples" data-mc-conditions="Primary.Licensing-C,Primary.Licensing-Java,Primary.Licensing-Net" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <!-- Google Tag Manager -->
+        <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Using XML Tags to Define Scope</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Gemalto_Template.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#555555, #555555);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#555555, #555555);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#555555, #555555);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#555555, #555555);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#555555, #555555);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="icon" sizes="16x16" href="../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript">/*<![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KWV9RV9');/*]]>*/</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Licensing_API/Licensing_API_ref-net.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <!-- Google Tag Manager (noscript) -->
+                                    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWV9RV9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+                                    </noscript>
+                                    <!-- End Google Tag Manager (noscript) -->
+                                    <!-- Uncomment the following line to enable syntax highlighting -->
+                                    <!-- <script type="text/javascript" src="../PlugIns/SyntaxHilite/Prism/prism.js"></script> --><a name="topPage"></a><a href="#topPage" data-balloon-pos="top" class="backToTop" title="Back to Top" alt="Back to Top"><img src="../Resources/Images/skins/arrow.png" /></a>
+                                    <script type="text/javascript" src="../Resources/Scripts/backtotop.js">
+                                    </script>
+                                    <div class="content">
+                                        <div id="contentBody">
+                                            <div class="ContentRowSideNav" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                                                <div>
+                                                    <div class="nocontent" xmlns="">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                                        </div>
+                                                    </div>
+                                                    <p xmlns="" />
+                                                    <div role="main" id="mc-main-content" xmlns="">
+                                                        <h1 xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><a name="kanchor55" xmlns=""></a><span class="mc-variable System.Title variable">Using XML Tags to Define Scope</span>
+                                                        </h1>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><a name="kanchor56" xmlns=""></a>Scope XML tags are used to define where the application 
+ is to search licenses when using the <a href="../Licensing_API/hasp_login_scope.htm"><span class="mc-variable Function_names.licensing-loginscope variable">Login (With Scope)</span></a> <span class="mc-variable Primary.function variable">method</span>. It is also used in the GetInfo <span class="mc-variable Primary.function variable">method</span>, to define from which objects information is to be gathered.</p>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Scope XML tags are used to filter possible licenses. They are not used to add information to facilitate the search.</p>
+                                                        <h2 xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Unlimited Searches</h2>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">The root tag for a Scope template is always <span>&lt;haspscope&gt;</span>. 
+ If you want to run an unlimited search, use the empty XML <span>&lt;haspscope 
+ /&gt;</span>.</p>
+                                                        <h2 xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><a name="cmp_attribute"></a>Searches According to Attribute</h2>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">If you want to constrain your search, you must define 
+ at least one "child" tag. See <a href="Scope__XML_Tags.htm">Scope 
+ Input XML Tags</a> for a list of the available tags. These tags have the 
+ following general syntax:</p><pre xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">&lt;object attribute="<span>value</span>"&gt;  </pre>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">You can only specify one attribute for each XML element. The exception 
+ to this rule is the optional <b>cmp</b> attribute. When 
+ this attribute is used, it must be placed after the tag to which it refers.</p>
+                                                        <div class="note" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                                                            <p data-mc-autonum="&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;"><span class="autonumber"><span><span style="color: #444444;" class="mcFormatColor"> <b>NOTE</b> &#160;&#160;</span></span></span>The <span>cmp</span> attribute 
+ can have any of the following values:</p>
+                                                            <p class="listLevel2"><span>equ</span> &#160;- &#160;<span>equal to</span></p>
+                                                            <p class="listLevel2"><span>lt</span> &#160;&#160;- &#160;<span>less than</span></p>
+                                                            <p class="listLevel2"><span>le</span> &#160;&#160;- &#160;<span>less than or equal 
+ to</span></p>
+                                                            <p class="listLevel2"><span>gt</span> &#160;&#160;- &#160;<span>greater 
+ than</span></p>
+                                                            <p class="listLevel2"><span>ge</span> &#160;&#160;- &#160;<span>greater 
+ than or equal to</span></p>
+                                                        </div>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">If you want the search to be made 
+ only on HASP HL keys, you would use the following scope:</p><pre xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">&lt;haspscope&gt;<br />&lt;hasp type="HASP-HL"&gt;<br />&#160;&#160;&lt;hasp version="4.0" cmp="lt"/&gt;<br />&lt;/hasp&gt;<br />&lt;/haspscope&gt;</pre>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">You can include additional attributes. Nested child tags 
+ are connected using <span>AND</span>. Child 
+ tags on the same level are connected using <span>OR</span>.</p>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">To search for keys that are both HL keys AND have a firmware 
+ version of 3.21 or later, use the following scope:</p><pre xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">&lt;haspscope&gt;<br />&#160;&#160;&#160;&#160;&lt;hasp type="HASP-HL"&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&lt;hasp version="3.21" cmp="ge" /&gt;<br />&#160;&#160;&#160;&#160;&lt;/hasp&gt;<br />&lt;/haspscope&gt;<br /></pre>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">In the above example, the attributes (type and version) 
+ are nested, indicating that both must be present.</p>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">In the following examples, either of the two equivalent 
+ Scope XML descriptions can be used to create a template that specifies 
+ that a program may only search for locally connected HL keys.</p>
+                                                        <h4 xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Example 1:</h4><pre xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">&lt;haspscope&gt;<br />&#160;&#160;&#160;&lt;hasp type="HASP-HL"&gt;<br />&#160;&#160;&#160;&#160;&#160;&lt;license_manager hostname="localhost" /&gt;<br />&#160;&#160;&#160;&lt;/hasp&gt;<br />&lt;/haspscope&gt;<br /></pre>
+                                                        <h4 xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Example 2:</h4><pre xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><span>&lt;</span>haspscope&gt;<br />&#160;&#160;&#160;&lt;license_manager hostname="localhost"&gt;<br />&#160;&#160;&#160;&#160;&#160;&lt;hasp type="HASP-HL"/&gt;<br />&#160;&#160;&#160;&lt;/license_manager&gt;<br />&lt;/haspscope&gt;</pre>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">If there are multiple attributes, and only one of them 
+ need be present, then the attributes must all be children of the same 
+ tag. In the following example, HL keys OR SL keys are accepted:</p><pre xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><span>&lt;haspscope&gt;</span><br />&#160;&#160;&#160;&lt;hasp type="HASP-HL" /&gt;<br />&#160;&#160;&#160;&lt;hasp type="HASP-SL" /&gt;<br />&lt;/haspscope&gt;</pre>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Both definitions can also be combined. The following example 
+ describes a Scope in which only SL keys OR remotely connected HL keys 
+ are accepted.</p><pre xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><span>&lt;</span>haspscope&gt;<br />&#160;&#160;&#160;&lt;license_manager hostname="localhost"&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&lt;hasp type="HASP-SL" /&gt;<br />&#160;&#160;&#160;&lt;/license_manager&gt;<br />&#160;&#160;&#160;&lt;license_manager hostname="~localhost"&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&lt;hasp type="HASP-HL" /&gt;<br />&#160;&#160;&#160;&lt;/license_manager&gt;<br />&lt;/haspscope&gt;</pre>
+                                                        <p class="note" data-mc-autonum="&lt;span style=&quot;color: #444444;&quot; class=&quot;mcFormatColor&quot;&gt; &lt;b&gt;NOTE&lt;/b&gt; &#160;&#160;&lt;/span&gt;" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><span class="autonumber"><span><span style="color: #444444;" class="mcFormatColor"> <b>NOTE</b> &#160;&#160;</span></span></span>When you execute a search using a Scope template, the search is performed on each individual Feature ID in turn. 
+ Consider the following example in which the Scope and Format are specified 
+ in such a way that an empty output is returned.</p>
+                                                        <h2 xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Example</h2>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">The user 
+ wants to create a list of all Sentinel protection keys that contain both 
+ Feature ID 1 and Feature ID 2. The result will be an empty list because 
+ the scope is tested against every Feature, not against every Sentinel 
+ protection key. (The return code will be HASP_SCOPE_RESULTS_EMPTY)</p>
+                                                        <h4 xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Scope</h4><pre xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br />&lt;haspscope&gt;<br />&#160;&#160;&#160;&lt;feature id="1"&gt;<br />&#160;&#160;&#160;&#160;&#160;&lt;feature id="2"/&gt;<br />&#160;&#160;&#160;&lt;/feature&gt;<br />&lt;/haspscope&gt;</pre>
+                                                        <h4 xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Format</h4><pre xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br />&lt;haspformat root="hasp_info"&gt;<br />&#160;&#160;&#160;&lt;hasp&gt;<br />&#160;&#160;&#160;&#160;&#160;&lt;attribute name="id"/&gt;<br />&#160;&#160;&#160;&lt;/hasp&gt;<br />&lt;/haspformat&gt;</pre>
+                                                        <h4 xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Output</h4><pre xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br />&lt;hasp_info/&gt;</pre>
+                                                        <h2 xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Related Topics</h2>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><a href="Scope__XML_Tags.htm">Scope Input XML Tags</a>
+                                                        </p>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><a href="../Licensing_API/hasp_login_scope.htm"><span class="mc-variable Function_names.licensing-loginscope variable">Login (With Scope)</span> <span class="mc-variable Primary.functionUC variable">Method</span></a>
+                                                        </p>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><a href="../Licensing_API/hasp_get_info.htm">GetInfo <span class="mc-variable Primary.functionUC variable">Method</span></a>
+                                                        </p>
+                                                        <p xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><a href="About_XML_tags.htm">About XML Tags</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Components_TOOLBAR mc-component nocontent" style="margin-top: 0px; mc-topic-toolbar-items: ;text-align: right;" xmlns="">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="footer" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><span class="mc-variable Default.Product variable" xmlns="">Sentinel</span>&#160;<span class="mc-variable Default.Release variable" xmlns="">8.4</span>&#160;<span class="mc-variable Default.ProjectTitle variable" xmlns="">Licensing API (.NET)</span><br xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> <span class="mc-variable Default.Copyright variable" xmlns="">© 2022</span> <span class="mc-variable Default.CompanyNameLong variable" xmlns="">Thales Group</span>. All rights reserved.&#160;&#160;|&#160;&#160;<span class="mc-variable Default.PartNumber variable" xmlns="">007-013811-003</span>&#160;<span class="mc-variable Default.Revision variable" xmlns="">Revision B</span>&#160;&#160;|&#160;&#160;Last updated: <span class="mc-variable Default.DateLong variable" xmlns="">19 April 2022</span>&#160;&#160;|&#160;&#160;<a href="https://supportportal.thalesgroup.com/csm?id=sentinel" target="_blank" xmlns="">Support</a>&#160;&#160;&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

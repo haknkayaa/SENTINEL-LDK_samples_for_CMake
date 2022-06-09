@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Note: This schema is applicable for Sentinel LDK product suite.
+-->
+<xs:schema
+      xmlns="http://www.safenet-inc.com/sentinelldk"
+      targetNamespace="http://www.safenet-inc.com/sentinelldk"
+      xmlns:sentinel_ldk="http://www.safenet-inc.com/sentinelldk"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+   <xs:simpleType name="SchemaVersionType">
+      <xs:restriction base="xs:string">
+         <xs:pattern value="\d{1}\d?\.\d{1}\d?" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="ProductNameType">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="50" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="ProductIdType">
+      <xs:restriction base="xs:nonNegativeInteger">
+         <xs:minInclusive value="0" />
+         <xs:maxInclusive value="65471" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="FeatureNameType">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="50" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="FeatureIdType">
+      <xs:restriction base="xs:positiveInteger">
+         <xs:minInclusive value="1" />
+         <xs:maxInclusive value="65471" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="EnforcementType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="SL-AdminMode" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="BaseExecutionCountType">
+      <xs:restriction base="xs:unsignedInt">
+         <xs:minInclusive value="1" />
+         <xs:maxInclusive value="16777215" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:complexType name="ExecutionCountType">
+      <xs:simpleContent>
+         <xs:extension base="sentinel_ldk:BaseExecutionCountType">
+            <xs:attribute name="action">
+               <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                     <xs:enumeration value="add" />
+                     <xs:enumeration value="sub" />
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+
+   <xs:simpleType name="DaysToExpirationType">
+      <xs:restriction base="xs:positiveInteger">
+         <xs:minInclusive value="1" />
+         <xs:maxInclusive value="3650" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="BaseExpiryDateType1">
+      <xs:restriction base="xs:positiveInteger">
+         <xs:minInclusive value="1" />
+         <xs:maxInclusive value="3650" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="BaseExpiryDateType2">
+      <xs:restriction base="xs:date">
+         <xs:minInclusive value="1980-01-01" />
+         <xs:maxInclusive value="2091-12-31" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="BaseExpiryDateType3">
+      <xs:restriction base="xs:dateTime">
+         <xs:minInclusive value="1980-01-01T00:00:00" />
+         <xs:maxInclusive value="2091-12-31T23:59:59" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="BaseExpiryDateType">
+      <xs:union memberTypes="BaseExpiryDateType1 BaseExpiryDateType2 BaseExpiryDateType3"/>
+   </xs:simpleType>
+
+   <xs:complexType name="ExpirationDateType">
+      <xs:simpleContent>
+         <xs:extension base="sentinel_ldk:BaseExpiryDateType">
+            <xs:attribute name="action">
+               <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                     <xs:enumeration value="add" />
+                     <xs:enumeration value="sub" />
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+
+   <xs:complexType name="PerpetualType">
+   </xs:complexType>
+
+   <xs:simpleType name="ConcurrencyCountCriteriaType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Per Process" />
+         <xs:enumeration value="Per Station" />
+         <xs:enumeration value="Per Login" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:complexType name="ROMemorySegmentType">
+      <xs:sequence>
+         <xs:element name="offset">
+            <xs:simpleType>
+               <xs:restriction base="xs:unsignedInt">
+                  <xs:minInclusive value="0" />
+                  <xs:maxInclusive value="2047" />
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="content">
+            <xs:simpleType>
+               <xs:restriction base="xs:base64Binary">
+                  <xs:maxLength value="2048" />
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="RWMemorySegmentType">
+      <xs:sequence>
+         <xs:element name="offset">
+            <xs:simpleType>
+               <xs:restriction base="xs:unsignedInt">
+                  <xs:minInclusive value="0" />
+                  <xs:maxInclusive value="4031" />
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="content">
+            <xs:simpleType>
+               <xs:restriction base="xs:base64Binary">
+                  <xs:maxLength value="4032" />
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   
+   <xs:complexType name="MemorySegmentType">
+      <xs:sequence>
+         <xs:element name="offset">
+            <xs:simpleType>
+               <xs:restriction base="xs:unsignedInt">
+                  <xs:minInclusive value="0" />
+                  <xs:maxInclusive value="65534" />
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="content">
+            <xs:simpleType>
+               <xs:restriction base="xs:base64Binary">
+                  <xs:minLength value="1" />
+                  <xs:maxLength value="2097152" />
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="BaseISVMemoryType">
+      <xs:sequence>
+         <xs:element name="file_id">
+            <xs:simpleType>
+               <xs:restriction base="xs:unsignedInt">
+                  <xs:minInclusive value="1" />
+                  <xs:maxInclusive value="65471" />
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="size" minOccurs="0">
+            <xs:simpleType>
+               <xs:restriction base="xs:unsignedInt">
+                  <xs:minInclusive value="1" />
+                  <xs:maxInclusive value="2097152" />
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="segment" type="sentinel_ldk:MemorySegmentType" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="ISVMemoryAction">
+      <xs:complexContent>
+         <xs:extension base="sentinel_ldk:BaseISVMemoryType">
+            <xs:attribute name="action">
+               <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                     <xs:enumeration value="set" />
+                     <xs:enumeration value="cancel" />
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   
+   <xs:complexType name="ISVMemoryType">
+      <xs:complexContent>
+         <xs:extension base="sentinel_ldk:ISVMemoryAction">
+            <xs:attribute name="attribute">
+               <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                     <xs:enumeration value="ro" />
+                     <xs:enumeration value="rw" />
+                     <xs:enumeration value="rwo" />
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   
+   <xs:complexType name="DynamicResourceType">
+      <xs:sequence>
+         <xs:element name="isv_memory"  type="sentinel_ldk:ISVMemoryType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="MemoryType">
+      <xs:sequence>
+         <xs:element name="ro_memory_segment" type="sentinel_ldk:ROMemorySegmentType" minOccurs="0" maxOccurs="unbounded" />
+         <xs:element name="rw_memory_segment" type="sentinel_ldk:RWMemorySegmentType" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:simpleType name="BaseConcurrencyCountType1">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Unlimited" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="BaseConcurrencyCountType2">
+      <xs:restriction base="xs:nonNegativeInteger">
+         <xs:minInclusive value="1" />
+         <xs:maxInclusive value="32752" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="BaseConcurrencyCountType">
+      <xs:union memberTypes="BaseConcurrencyCountType1 BaseConcurrencyCountType2 "/>
+   </xs:simpleType>
+
+   <xs:complexType name="ConcurrencyCountType">
+      <xs:simpleContent>
+         <xs:extension base="sentinel_ldk:BaseConcurrencyCountType">
+            <xs:attribute name="action">
+               <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                     <xs:enumeration value="add" />
+                     <xs:enumeration value="sub" />
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+
+   <xs:simpleType name="NetworkAccessType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Yes" />
+         <xs:enumeration value="No" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="RehostType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="EndUserManaged" />
+      </xs:restriction>
+   </xs:simpleType>
+   
+   <xs:complexType name="BaseRehostInfoType">
+      <xs:sequence>
+         <xs:element name="type" type="sentinel_ldk:RehostType" minOccurs="0" maxOccurs="1" />
+      </xs:sequence>
+   </xs:complexType>
+   
+   <xs:complexType name="RehostInfoType">
+      <xs:complexContent>
+         <xs:extension base="sentinel_ldk:BaseRehostInfoType">
+            <xs:attribute name="action">
+               <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                     <xs:enumeration value="cancel" />
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   
+   <xs:simpleType name="DetachableType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Yes" />
+         <xs:enumeration value="No" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:complexType name="BaseConcurrencyType">
+      <xs:sequence>
+         <xs:element name="count" type="sentinel_ldk:ConcurrencyCountType" minOccurs="0" />
+         <xs:element name="count_criteria" type="sentinel_ldk:ConcurrencyCountCriteriaType" minOccurs="0" />
+         <xs:element name="network_access" type="sentinel_ldk:NetworkAccessType" minOccurs="0" />
+         <xs:element name="detachable" type="sentinel_ldk:DetachableType" minOccurs="0" />
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="ConcurrencyType">
+      <xs:complexContent>
+         <xs:extension base="sentinel_ldk:BaseConcurrencyType">
+            <xs:attribute name="action">
+               <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                     <xs:enumeration value="cancel" />
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+
+   <xs:simpleType name="RemoteDesktopAccess">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Yes" />
+         <xs:enumeration value="No" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="VirtualMachineAccess">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Yes" />
+         <xs:enumeration value="No" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:complexType name="BaseLicensePropertiesType">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element name="days_to_expiration" type="sentinel_ldk:DaysToExpirationType" minOccurs="0" />
+            <xs:element name="execution_count" type="sentinel_ldk:ExecutionCountType" minOccurs="0" />
+            <xs:element name="expiration_date" type="sentinel_ldk:ExpirationDateType" minOccurs="0" />
+            <xs:element name="perpetual" type="sentinel_ldk:PerpetualType" minOccurs="0" />
+         </xs:choice>
+         <xs:element name="concurrency" type="sentinel_ldk:ConcurrencyType" minOccurs="0" />
+         <xs:element name="remote_desktop_access" type="sentinel_ldk:RemoteDesktopAccess" minOccurs="0" />
+         <xs:element name="virtual_machine_access" type="sentinel_ldk:VirtualMachineAccess" minOccurs="0" />
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="LicensePropertiesType">
+      <xs:complexContent>
+         <xs:extension base="sentinel_ldk:BaseLicensePropertiesType">
+            <xs:attribute name="action">
+               <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                     <xs:enumeration value="set" />
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+
+   <xs:complexType name="BaseFeatureType">
+      <xs:sequence>
+         <xs:element name="id" type="sentinel_ldk:FeatureIdType" />
+         <xs:element name="name" type="sentinel_ldk:FeatureNameType" minOccurs="0" />
+         <xs:element name="license_properties" type="sentinel_ldk:LicensePropertiesType" minOccurs="0" />
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="FeatureType">
+      <xs:complexContent>
+         <xs:extension base="sentinel_ldk:BaseFeatureType">
+            <xs:attribute name="action">
+               <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                     <xs:enumeration value="cancel" />
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   
+   <xs:simpleType name="CloneProtectionType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Yes" />
+         <xs:enumeration value="No" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="PhysicalMachineCloneProtectionStandardType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Disable" />
+         <!-- HDD Serial Number, Motherboard ID -->
+         <xs:enumeration value="PMType1" />
+         <!-- Fully Qualified Domain Name -->
+         <xs:enumeration value="FQDN" />
+         <!-- HDD Serial Number, Motherboard ID with improved tolerance using other hardware components -->
+         <xs:enumeration value="PMType2" />
+         <xs:enumeration value="PlatformDefault" />
+         <xs:enumeration value="PlatformLatest" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="CloneProtectionTemplateNameType">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="18" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="PhysicalMachineCloneProtectionCriteriaName">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="machine_id" />
+         <xs:enumeration value="ethernet_address" />
+         <xs:enumeration value="hard_disk" />
+         <xs:enumeration value="cpu" />
+         <xs:enumeration value="fqdn" />
+         <xs:enumeration value="ip_address" />
+         <xs:enumeration value="sid" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="VirtualMachineCloneProtectionCriteriaName">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="machine_id" />
+         <xs:enumeration value="ethernet_address" />
+		 <xs:enumeration value="hard_disk" />
+         <xs:enumeration value="cpu" />
+         <xs:enumeration value="fqdn" />
+         <xs:enumeration value="ip_address" />
+         <xs:enumeration value="vm_generation_id" />
+         <xs:enumeration value="sid" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:complexType name="PhysicalMachineCloneProtectionTemplateCriteriaType">
+      <xs:sequence>
+         <xs:element name="name" type="sentinel_ldk:PhysicalMachineCloneProtectionCriteriaName" minOccurs="1" maxOccurs="7"/>
+      </xs:sequence>
+      <xs:attribute name="minimum">
+         <xs:simpleType>
+            <xs:restriction base="xs:positiveInteger">
+               <xs:minInclusive value="1" />
+               <xs:maxInclusive value="7" />
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+   </xs:complexType>
+
+   <xs:complexType name="VirtualMachineCloneProtectionTemplateCriteriaType">
+      <xs:sequence>
+         <xs:element name="name" type="sentinel_ldk:VirtualMachineCloneProtectionCriteriaName" minOccurs="1" maxOccurs="8"/>
+      </xs:sequence>
+      <xs:attribute name="minimum">
+         <xs:simpleType>
+            <xs:restriction base="xs:positiveInteger">
+               <xs:minInclusive value="1" />
+               <xs:maxInclusive value="8" />
+            </xs:restriction>
+         </xs:simpleType>
+      </xs:attribute>
+   </xs:complexType>
+
+   <xs:complexType name="PhysicalMachineCloneProtectionCustomType">
+      <xs:sequence>
+         <xs:element name="enforce_all_available_identifiers" type="sentinel_ldk:EnforceAllAvailableIdentifiers" minOccurs="0" maxOccurs="1" />
+         <xs:element name="name" type="sentinel_ldk:CloneProtectionTemplateNameType" minOccurs="1" />
+         <xs:element name="criteria" type="sentinel_ldk:PhysicalMachineCloneProtectionTemplateCriteriaType" minOccurs="1" />
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:simpleType name="VirtualMachineCloneProtectionStandardType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Disable" />
+         <!-- Virtual Machine UUID, Ethernet Id, CPU Info -->
+         <xs:enumeration value="VMType1" />
+         <!-- Fully Qualified Domain Name -->
+         <xs:enumeration value="FQDN" />
+         <xs:enumeration value="VMType2" />
+         <xs:enumeration value="VMType3" />
+         <xs:enumeration value="VMType4" />
+         <xs:enumeration value="PlatformDefault" />
+         <xs:enumeration value="PlatformLatest" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:complexType name="VirtualMachineCloneProtectionCustomType">
+      <xs:sequence>
+         <xs:element name="enforce_all_available_identifiers" type="sentinel_ldk:EnforceAllAvailableIdentifiers" minOccurs="0" maxOccurs="1" />
+         <xs:element name="name" type="sentinel_ldk:CloneProtectionTemplateNameType" minOccurs="1" />
+         <xs:element name="criteria" type="sentinel_ldk:VirtualMachineCloneProtectionTemplateCriteriaType" minOccurs="1" />
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="BaseCloneProtectionTypeEx">
+      <xs:sequence>
+      <xs:choice>
+         <xs:element name="physical_machine" type="sentinel_ldk:PhysicalMachineCloneProtectionStandardType" />
+         <xs:element name="physical_machine_custom" type="sentinel_ldk:PhysicalMachineCloneProtectionCustomType" />
+      </xs:choice>
+      <xs:choice>
+         <xs:element name="virtual_machine" type="sentinel_ldk:VirtualMachineCloneProtectionStandardType" />
+         <xs:element name="virtual_machine_custom" type="sentinel_ldk:VirtualMachineCloneProtectionCustomType" />
+      </xs:choice>
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="CloneProtectionTypeEx">
+      <xs:complexContent>
+         <xs:extension base="sentinel_ldk:BaseCloneProtectionTypeEx">
+            <xs:attribute name="version">
+               <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                     <xs:enumeration value="7.5" />
+                     <xs:enumeration value="7.6" />
+                     <xs:enumeration value="7.10" />
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+
+   <xs:complexType name="BaseProductType">
+      <xs:sequence>
+         <xs:element name="id" type="sentinel_ldk:ProductIdType" />
+         <xs:element name="name" type="sentinel_ldk:ProductNameType" minOccurs="0" />
+         <xs:choice>
+            <xs:element name="clone_protection" type="sentinel_ldk:CloneProtectionType" minOccurs="0" maxOccurs="1" />
+            <xs:element name="clone_protection_ex" type="sentinel_ldk:CloneProtectionTypeEx" minOccurs="0" maxOccurs="1" />
+         </xs:choice>
+         <xs:element name="feature" type="sentinel_ldk:FeatureType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="ProductType">
+      <xs:complexContent>
+         <xs:extension base="sentinel_ldk:BaseProductType">
+            <xs:attribute name="action">
+               <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                     <xs:enumeration value="cancel" />
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:attribute>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   
+   <xs:simpleType name="EnableSlLegacySupportType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Yes" />
+         <xs:enumeration value="No" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="EnableCloudLicensing">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Yes" />
+         <xs:enumeration value="No" />
+      </xs:restriction>
+   </xs:simpleType>
+   
+   <xs:simpleType name="CheckDetachedLicenseBeforeFormatKey">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Yes" />
+         <xs:enumeration value="No" />
+      </xs:restriction>
+   </xs:simpleType>
+   
+       <xs:simpleType name="EnforceAllAvailableIdentifiers">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Yes" />
+         <xs:enumeration value="No" />
+      </xs:restriction>
+   </xs:simpleType>
+   
+   <xs:complexType name="ContractInfoType">
+      <xs:sequence>
+         <xs:element name="issued_to" type="xs:string" minOccurs="0" maxOccurs="1"/>
+         <xs:element name="issuer" type="xs:string" minOccurs="0" maxOccurs="1"/>
+         <xs:element name="issued_on" type="xs:dateTime" minOccurs="0" maxOccurs="1"/>
+         <xs:element name="agreement" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:simpleType name="AcknowledgementRequestType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Yes" />
+         <xs:enumeration value="No" />
+      </xs:restriction>
+   </xs:simpleType>
+   
+   <xs:simpleType name="ReadableLicenseType">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Yes" />
+         <xs:enumeration value="No" />
+      </xs:restriction>
+   </xs:simpleType>
+
+   <xs:simpleType name="MinimumRTEVersion">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="6.40" />
+         <xs:enumeration value="7.50" />
+         <xs:enumeration value="7.60" />
+         <xs:enumeration value="7.100" />
+         <xs:enumeration value="8.11" />
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="LicenseTypesList">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="expiration_date"/>
+         <xs:enumeration value="days_to_expiration"/>
+         <xs:enumeration value="global"/>
+         <xs:enumeration value="concurrency"/>
+         <xs:enumeration value="execution_count"/>
+         <xs:enumeration value="trial"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="SupportedPlatformList">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="docker"/>
+         <xs:enumeration value="ec2"/>
+         <xs:enumeration value="azure"/>
+         <xs:enumeration value="all"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="PlatformTypes">
+      <xs:sequence>
+         <xs:element name="name" type="sentinel_ldk:SupportedPlatformList" minOccurs="0" maxOccurs="4"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="LicenseTypes">
+      <xs:sequence>
+         <xs:element name="type" type="sentinel_ldk:LicenseTypesList" minOccurs="0" maxOccurs="6"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="SSIDFLAGTypes">
+      <xs:sequence>
+         <xs:element name="supported_platforms" type="sentinel_ldk:PlatformTypes" minOccurs="0" maxOccurs="1"/>
+         <xs:element name="license_properties" type="sentinel_ldk:LicenseTypes" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="license">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="readable_license" type="sentinel_ldk:ReadableLicenseType" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contract_info" type="sentinel_ldk:ContractInfoType" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="acknowledgement_request" type="sentinel_ldk:AcknowledgementRequestType" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="enforcement_type" type="sentinel_ldk:EnforcementType" fixed="SL-AdminMode" />
+            <xs:element name="ignore_secure_storage_id_check" type="sentinel_ldk:SSIDFLAGTypes" minOccurs="0" maxOccurs="1" />
+            <xs:element name="minimum_rte_api_version" type="sentinel_ldk:MinimumRTEVersion" minOccurs="0" maxOccurs="1" />
+            <xs:element name="rehost" type="sentinel_ldk:RehostInfoType" minOccurs="0" maxOccurs="1" />
+            <xs:element name="check_detached_license_before_format_key" type="sentinel_ldk:CheckDetachedLicenseBeforeFormatKey" minOccurs="0" maxOccurs="1" />
+            <xs:element name="enable_sl_legacy_support" type="sentinel_ldk:EnableSlLegacySupportType" minOccurs="0" maxOccurs="1" />
+            <xs:element name="cloud_licensing" type="sentinel_ldk:EnableCloudLicensing" minOccurs="0" maxOccurs="1" />
+            <xs:element name="product" type="sentinel_ldk:ProductType" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="memory" type="sentinel_ldk:MemoryType" minOccurs="0" maxOccurs="1" />
+            <xs:element name="dynamic_resource" type="sentinel_ldk:DynamicResourceType" minOccurs="0" maxOccurs="1" />
+         </xs:sequence>
+         <!-- Current version is 1.0 -->
+         <xs:attribute name="schema_version" type="sentinel_ldk:SchemaVersionType" use="required" />
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

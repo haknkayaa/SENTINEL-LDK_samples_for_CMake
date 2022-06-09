@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultAliasFile>
+    <Map Name="la-decrypt" Link="Licensing_API/hasp_decrypt.htm" ResolvedId="1079" />
+    <Map Name="la-encrypt" Link="Licensing_API/hasp_encrypt.htm" ResolvedId="1081" />
+    <Map Name="la-get-info" Link="Licensing_API/hasp_get_info.htm" ResolvedId="1085" />
+    <Map Name="la-get-rtc" Link="Licensing_API/hasp_get_rtc.htm" ResolvedId="1086" />
+    <Map Name="la-get-session" Link="Licensing_API/hasp_get_sessioninfo.htm" ResolvedId="1087" />
+    <Map Name="la-get-size" Link="Licensing_API/hasp_get_size.htm" ResolvedId="1088" />
+    <Map Name="la-login" Link="Licensing_API/hasp_login.htm" ResolvedId="1094" />
+    <Map Name="la-read" Link="Licensing_API/hasp_read.htm" ResolvedId="1099" />
+    <Map Name="la-transfer" Link="Licensing_API/hasp_transfer.htm" ResolvedId="1101" />
+    <Map Name="la-update" Link="Licensing_API/hasp_update.htm" ResolvedId="1102" />
+    <Map Name="lg-write" Link="Licensing_API/hasp_write.htm" ResolvedId="1103" />
+    <Map Name="la-login-scope" Link="Licensing_API/hasp_login_scope.htm" ResolvedId="1095" />
+    <Map Name="la-logout" Link="Licensing_API/hasp_logout.htm" ResolvedId="1096" />
+    <Map Name="la-releasing-session-license" Link="Licensing_XML_Tags/Releasing_session_license.htm" ResolvedId="1003" />
+    <Map Name="la-scope-input-xml-tags" Link="Licensing_XML_Tags/Scope__XML_Tags.htm" ResolvedId="1004" />
+    <Map Name="la-consuming-executions" Link="Licensing_XML_Tags/Consuming_executions.htm" ResolvedId="1009" />
+</CatapultAliasFile>

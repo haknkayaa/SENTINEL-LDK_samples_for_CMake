@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_SIDE_NAV" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Aladdin.Hasp Namespace|Enumerations" data-mc-conditions="Primary.Licensing-C,Primary.Licensing-Java,Primary.Licensing-Net" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <!-- Google Tag Manager -->
+        <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Licensing API Status Codes</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/Gemalto_Template.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.filler-button
+{
+	-pie-background: linear-gradient(#555555, #555555);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#555555, #555555);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#555555, #555555);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#555555, #555555);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#555555, #555555);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Page.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript">/*<![CDATA[*/(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KWV9RV9');/*]]>*/</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 900px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Licensing_API_ref-net.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <!-- Google Tag Manager (noscript) -->
+                                    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWV9RV9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+                                    </noscript>
+                                    <!-- End Google Tag Manager (noscript) -->
+                                    <!-- Uncomment the following line to enable syntax highlighting -->
+                                    <!-- <script type="text/javascript" src="../PlugIns/SyntaxHilite/Prism/prism.js"></script> --><a name="topPage"></a><a href="#topPage" data-balloon-pos="top" class="backToTop" title="Back to Top" alt="Back to Top"><img src="../../Resources/Images/skins/arrow.png" /></a>
+                                    <script type="text/javascript" src="../../Resources/Scripts/backtotop.js">
+                                    </script>
+                                    <div class="content">
+                                        <div id="contentBody">
+                                            <div class="ContentRowSideNav" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                                                <div>
+                                                    <div class="nocontent" xmlns="">
+                                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                                        </div>
+                                                    </div>
+                                                    <p xmlns="" />
+                                                    <div role="main" id="mc-main-content" xmlns="">
+                                                        <h1 data-mc-conditions="Primary.Licensing-Net" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">HaspStatus Enumeration<a name="kanchor60" xmlns=""></a></h1>
+                                                        <p data-mc-conditions="Primary.Licensing-Net" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><b>Namespace:</b> Aladdin.Hasp</p>
+                                                        <p data-mc-conditions="Primary.Licensing-Net" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Defines status codes that can be returned by Sentinel Licensing .NET library.</p>
+                                                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Page.css');" class="TableStyle-Page" cellspacing="0" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+                                                            <col width="82px" class="TableStyle-Page-Column-Column1" />
+                                                            <col width="313px" class="TableStyle-Page-Column-Column1" />
+                                                            <col width="366px" class="TableStyle-Page-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-Page-Head-Header1">
+                                                                    <th class="TableStyle-Page-HeadE-Column1-Header1" style="font-size: 9pt;">No.</th>
+                                                                    <th class="TableStyle-Page-HeadE-Column1-Header1" style="font-size: 9pt;">Status 
+		 Code</th>
+                                                                    <th class="TableStyle-Page-HeadD-Column1-Header1" style="font-size: 9pt;">Description</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">0</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">StatusOk</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Request was
+		 successfully completed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">1</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvalidAddress</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Request 
+		 exceeds the Sentinel protection key memory range</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">2</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InvalidFeature</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Legacy 
+		 HASP HL Run-time API: Unknown/Invalid Feature ID option</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">3</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">NotEnoughMemory</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>System 
+is 		 out of memory</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">4</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">TooManyOpenFeatures</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Too 
+		 many open sessions exist</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">5</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">AccessDenied</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Access 
+		 to Feature was denied</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">6</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">IncompatibleFeature</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p><a name="IX_Decryption_2" id="IX_Decryption_2"></a>Legacy decryption 
+		 <span class="mc-variable Primary.function variable">method</span> cannot work on Feature</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">7</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">ContainerNotFound</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Sentinel 
+		 protection key is no longer available</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">8</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">BufferTooShort</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Encrypted/decrypted 
+		 data length too short to execute <span class="mc-variable Primary.function variable">method</span> call</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">9</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvalidHandle</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Invalid 
+		 handle was passed to <span class="mc-variable Primary.function variable">method</span></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">10</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvalidFile</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Specified 
+		 File ID is not recognized by API</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">11</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">DriverTooOld</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Installed 
+		 driver is too old to execute <span class="mc-variable Primary.function variable">method</span></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">12</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">NoTime</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Real-time 
+		 clock (RTC) not available</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">13</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">SystemError</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Generic 
+		 error from host system call</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">14</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">DriverNotFound
+                            </MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Required 
+		 driver is not installed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">15</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvalidFormat</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>File format for update is not recognized</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">16</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">RequestNotSupported</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Unable 
+		 to execute <span class="mc-variable Primary.function variable">method</span> in this context</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">17</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvalidUpdateObject</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Binary 
+		 data that was passed to <span class="mc-variable Primary.function variable">method</span> does not contain an update</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">18</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">KeyIdNotFound</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Sentinel 
+		 protection key was not found</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">19</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvalidUpdateData</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Required 
+		 XML tags were not found<br />	OR<br />	Contents in binary data are missing or invalid</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">20</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">UpdateNotSupported</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Update 
+		 request is not supported by Sentinel protection key</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">21</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvalidUpdateCounter</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Update 
+		 counter is not set correctly</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">22</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InvalidVendorCode&#160;
+                            </MadCap:conditionalText>&#160;
+                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Invalid 
+		 Vendor Code was passed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">23</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">EncryptionNotSupported</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Sentinel 
+		 protection key does not support encryption type</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">24</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvalidTime</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>The time value that was passed is  outside the supported value range</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">25</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">NoBatteryPower</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>The real-time 
+		 clock battery has run out of power</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">26</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">UpdateNoAckSpace</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Acknowledge 
+		 data that was requested by the update <code>ack_data</code> 
+		 parameter is <code>NULL</code></p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">27</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">TerminalServiceDetected</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Program is running on a terminal server</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">28</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">FeatureNoteImplemented</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Requested 
+		 Feature type is not implemented</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">29</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">UnknownAlgorithm</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Unknown 
+		 algorithm used in V2C or V2CP file</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">30</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvalidSignature</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Signature 
+		 verification operation failed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">31
+                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">FeatureNotFound</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Requested 
+		 Feature not found</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">32</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">NoLog</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Access 
+		 log not enabled</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">33</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">LocalComErr</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Communication 
+		 error occurred between the API and the local Sentinel License Manager</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">34</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">UnknownVcode</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Vendor 
+		 Code is not recognized by API</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">35</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InvalidXmlSpec</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Invalid 
+		 XML specification exists</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">36</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InvalidXmlScope</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Invalid 
+		 XML scope exists</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">37</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">TooManyKeys</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Too 
+		 many Sentinel protection keys are currently connected</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">38</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">TooManyUsers</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Too 
+		 many users are currently connected</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">39</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">BrokenSession</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Session was interrupted.</p>
+                                                                        <p>This can occur when certain updates are applied to the license while a session is active. For example:</p>
+                                                                        <p class="ul1" data-mc-autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;"><span class="autonumber"><span class="ul1Bullet"><b>&gt;</b></span></span>A Feature required by the session was deleted.</p>
+                                                                        <p class="ul1" data-mc-autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;"><span class="autonumber"><span class="ul1Bullet"><b>&gt;</b></span></span>The license was canceled.</p>
+                                                                        <p class="ul1" data-mc-autonum="&lt;b&gt;&amp;gt;&lt;/b&gt;"><span class="autonumber"><span class="ul1Bullet"><b>&gt;</b></span></span>The network (remote license) support setting for a required Feature was changed. (In this case, all sessions will be interrupted, including local sessions.)</p>
+                                                                        <p>This may also indicate that the protection key is not available or that the user is attempting to bypass the application protection by using a protection key emulator.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">40</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">RemoteCommErr</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Communication 
+		 error occurred between local and remote Sentinel License Managers</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">41</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">FeatureExpired</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Feature 
+		 expired or no </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">42</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">TooOldLM</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Sentinel 
+		 License Manager version is too old. Update Sentinel Run-time Environment to the latest version.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">43</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">DeviceError</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>For 
+		 a Sentinel SL key, an input/output error occurred in the secure 
+		 storage area<br />		OR<br />		For a Sentinel HL key, a USB communication error occurred</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">44</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">UpdateBlocked</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Update 
+		 installation not permitted</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">45</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">TimeError</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>System 
+		 time has been tampered with</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">46</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">SecureChannelError</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Communication 
+		 error occurred in the secure channel</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">47</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">CorruptStorage</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Corrupt 
+		 data exists in secure storage area of Sentinel protection key</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">48</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">VendorLibNotFound</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>The customized vendor library (<b>haspvlib.vendorID.*</b>) cannot be located</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">49</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InvalidVendorLib</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Unable 
+		 to load Vendor library</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">50</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">EmptyScopeResults</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Unable 
+		 to locate any Feature that matches the scope</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">51</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">VMDetected</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Protected 
+		 application is running on a virtual machine, but one or more Features 
+		 are not enabled for virtual machines.<br />OR<br />The user attempted 
+		 to rehost a protection key from a physical machine to a virtual 
+		 machine. However, none of the Features contained in the protection key  are enabled for virtual machines.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">52</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">HardwareModified</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Sentinel 
+		 SL key incompatible with machine hardware. Sentinel SL key locked 
+		 to different hardware.<br />OR<br />	In the case of a V2C or V2CP file, conflict between Sentinel SL key data 
+		 and machine hardware data. Sentinel SL key locked to different 
+		 hardware.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">53</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">UserDenied</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Login 
+		 denied because of user restrictions</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">54</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">UpdateTooOld</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Trying 
+		 to install a V2C or V2CP file with an update counter that is out of sequence 
+		 with update counter in the Sentinel protection key. Values of 
+		 update counter in file are lower than those in Sentinel protection 
+		 key.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">55</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">UpdateTooNew</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Trying 
+		 to install a V2C or V2CP file with an update counter that is out of sequence 
+		 with the update counter in the Sentinel protection key. The gap between the first 
+		 value in the file and the value in Sentinel protection 
+		 key is greater than 1.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">56</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">VendorLibOld</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Vendor 
+		 library is too old</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">57</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">UploadError</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Check 
+		 in of a file (such as &#160;V2C, H2R) using Admin Control Center 
+		 failed, possibly because of illegal format</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">58</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InvalidRecipient
+                            </MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Invalid 
+		 XML RECIPIENT 
+		 parameter </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">59</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InvalidDetachAction</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Invalid 
+		 XML action 
+		 parameter</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">60</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">TooManyProducts</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>The scope specified in the <a href="../hasp_transfer.htm">Transfer</a> <span class="mc-variable Primary.function variable">method</span> does not specify a unique Product</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">61</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InvalidProduct</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Invalid 
+		 Product information</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">62</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">UnknownRecipient</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Update 
+		 can only be applied to recipient machine specified in the <a href="../hasp_detach.htm">Detach</a> <span class="mc-variable Primary.function variable">method</span>, 
+		 not to this machine</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">63</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InvalidDuration</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Invalid 
+		 detached license duration period specified. Duration must be less 
+		 than or equal to maximum allowed for this license.<br />		OR<br />		Duration extension is to a date earlier than the expiration date 
+		 of the current detached license.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">64</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">CloneDetected</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Cloned 
+		 Sentinel SL storage was detected. Feature is unavailable.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">65</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">UpdateAlreadyAdded</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>The 
+		 specified V2C or or V2CP update was already installed in the License Manager 
+		 service</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">66</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">HaspInactive</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Specified 
+		 Key ID is in Inactive state</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">67</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">NoDetachableFeature</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>No 
+		 detachable Feature exists in the specified key from which the 
+		 detached license is requested</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">68</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">TooManyHosts</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>The 
+		 specified scope does not specify a unique host</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">69</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">RehostNotAllowed</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Rehost 
+		 action is not allowed for the specified Key &#160;ID</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">70</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">LicenseRehosted</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Original 
+		 license has been transferred to another machine. Therefore, the 
+		 license cannot be returned to the source machine.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">71</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">RehostAlreadyApplied</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Old 
+		 rehost license cannot be applied. A rehost-counter mismatch occurred 
+		 </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">72</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">CannotReadFile</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>A 
+		 V2C or V2CP file was not found, or access was denied</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">73</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">ExtensionNotAllowed</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>The 
+		 license cannot be extended because the number of detached licenses 
+		 is greater than the number of concurrent licenses allowed</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">74</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">DetachDisabled</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>The user attempted to detach a Product from a network license hosted on a virtual machine. However, none of the Features included in the Product are enabled for virtual machines.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">75</p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">RehostDisabled</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>The user attempted to rehost a protection key from a virtual  machine. However, none of the Features contained in the protection key are 
+		 enabled for virtual machines.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">76</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">DetachedLicenseFound</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">The user attempted to format an SL-AdminMode key or to migrate an SL-Legacy key to an SL-AdminMode key. However, a Product is currently detached from the key.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">77</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">RecipientOldLm</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">For a rehost operation: The fingerprint of the target machine was collected using tools (RUS utility or Licensing API) earlier than Sentinel LDK v.7.0.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">78</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">SecureStoreIdMismatch</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">A secure storage ID mismatch occurred</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">79</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">Duplicatehostname</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>The license fingerprint is bound to a specific hostname; however, two or more machines with this hostname were found in the network. As a result, the license cannot be used.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">80</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">MissingLM</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">A protected application tried to log in to a Feature that supports concurrency on a Sentinel HL (Driverless configuration) key. The Sentinel LDK License Manager service is not active on the computer where the key is located.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">81</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">FeatureInsufficientExecutionCount</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>A protected application tried to consume or reserve multiple executions while logging in to a Feature. However, the license does not contain the number of executions that were requested.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">82</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_INCOMPATIBLE_PLATFORM"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">ImcompatiblePlatform</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">The function is attempting to perform an operation that is not compatible with the target platform </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">83</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">HaspDisabled</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>A Sentinel HL (Driverless configuration) key was disabled because a user attempted to tamper with the key or with the protected application</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">84</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_SHARING_VIOLATION"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">SharingViolation</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">An HL key is being shared by the use of a USB splitter device (such as Smart X). When this error occurs, a  "sharing violation" message is also displayed on the relevant page in Admin Control Center.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">85</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_KILLED_SESSION"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">KilledSession</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">The session was interrupted manually from Admin Control Center or was interrupted due a network malfunction</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">86</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_VS_DETECTED"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">VsDetected</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">The function detected that the operation is being performed in virtual storage. The machine is using computer restoration software.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">87</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_IDENTITY_REQUIRED"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">IdentityRequired</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">(For identity-based licenses) An identity string is required</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">88</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_IDENTITY_UNAUTHENTICATED"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">IdentityUnauthenticated</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">(For identity-based licenses) The identity string is not authenticated</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">89</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_IDENTITY_DISABLED"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">IdentityDisabled</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">(For identity-based licenses) The identity string is disabled</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">90</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_IDENTITY_DENIED"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">IdentityDenied</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">(For identity-based licenses) The client identity does not have enough permission for the
+operation</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">91</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_IDENTITY_SHARING_VIOLATION"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">IdentitySharingViolation</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">(For identity-based licenses) The session was killed because the identity string used to
+create the session was acquired by another machine.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">92</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_IDENTITY_TOO_MANY_MACHINES"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">IdentityTooManyMachines</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">(For identity-based licenses) The maximum number of machines to which the
+identity string can be assigned was reached</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">93</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_IDENTITY_SERVER_NOT_READY"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">IdentityServerNotReady</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">(For identity-based licenses) The option to store identity secrets with encryption was selected in Admin Control Center, but the authentication key was not yet defined (using Sentinel Admin API).</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">94</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_UPDATE_OUT_OF_SYNC"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">UpdateOutOfSync</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>You attempted to install a V2C file with an update counter that is out of sync with the update counter in the Sentinel protection key.</p>
+                                                                        <p>The vendor should obtain a new C2V file from the customer and then generate a new V2C file.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">95</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_REMOTE_SHARING_VIOLATION"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">RemoteSharingViolation</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>There were multiple attempts to access the key from a remote machine using a proxy.</p>
+                                                                        <p>The user is attempting to access a license that does not support concurrency from a remote machine, using a proxy to make the remote machine appear as local.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">96</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">CloudSessionOccupiedRemotely</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>A cloud licensing session was released because the client requested the seat from a different location</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">97</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">CloudMissingAuthorization</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Cloud licensing authorization is required to use this license</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">98</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InvalidNetworkSeats</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Invalid seat value in detach of seats with concurrency. Seat count cannot be decreased when modifying a detach</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">99</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">NetworkDetachDisabled</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Detach of seats with concurrency is disabled on a Product with only unlimited-concurrency features</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">100</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_CLOUD_NOT_SUPP"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">CloudNotSupp</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>The requested cloud functionality is not supported</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">101</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_CLOUD_NOT_TRUSTED"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">CloudNotTrusted</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Only a vendor who satisfied the documented requirements can install a license in trusted license storage</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">102</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_CLOUD_STORAGE_COMM_ERR"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">CloudStorageCommErr</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>A communication error occurred with the license storage</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">103</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_IDENTITY_EXPIRED"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">IdentityExpired</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">The client identity has expired</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">104</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_INV_OPTION"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InvOption</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1"> The option value specified for hasp_updateSession is not valid</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">105</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"><a name="HASP_CLOUD_STORAGE_BUSY"></a>
+                                                                        <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">CloudStorageBusy</MadCap:conditionalText>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">The license server is overloaded. The user should retry the operation in a few seconds.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">400</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">NoApiDylib</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Unable 		 to locate dynamic library for API</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">401</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InvApiDylib</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Dynamic 
+		 library for API is invalid</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">402</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">IncompleteApiDylib</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Requested 
+		 function was not found<br />	OR <br />	In the case of the API Dispatcher, API DLL is too old</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">500</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvalidObject</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Object 
+		 was incorrectly initialized</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">501</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvalidParameter</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Scope 
+		 string is too long (maximum length is 32 KB)</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">502</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">AreadyLoggedIn</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Logging 
+		 in twice to same object</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">503</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">AlreadyLoggedOut</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Logging 
+		 out twice from same object</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">525</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">OperationFailed</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Incorrect 
+		 use of system or platform</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">600</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">NoExtblock</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">Internal error occurred: No classic memory extension block available</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">650</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvPortType</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">Internal error occurred:  Invalid port type</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1" data-mc-conditions="">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">651</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p><span data-mc-conditions="Primary.Licensing-Net">InvPort</span>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">Internal error occurred:  Invalid port value</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1" data-mc-conditions="Primary.Licensing-Net">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1" style="text-align: right;">652</td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1"> <a name="HaspDotNetDllBroken"></a>HaspDotNetDllBroken</td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">.NET DLL found broken</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">698</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyE-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">NotImplemented</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyD-Column1-Body1">
+                                                                        <p>Requested 
+		 function was not implemented<br />	OR <br />	In the case of the API Dispatcher, API DLL is too old</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Page-Body-Body1">
+                                                                    <td class="TableStyle-Page-BodyB-Column1-Body1">
+                                                                        <p align="right">
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.LabVIEW-Off">699</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyB-Column1-Body1">
+                                                                        <p>
+                                                                            <MadCap:conditionalText data-mc-conditions="Primary.Licensing-Net">InternalError</MadCap:conditionalText>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-Page-BodyA-Column1-Body1">
+                                                                        <p>Internal 
+		 error occurred in the API</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Components_TOOLBAR mc-component nocontent" style="margin-top: 0px; mc-topic-toolbar-items: ;text-align: right;" xmlns="">
+                                                        <div class="button-group-container-left">
+                                                            <button class="button needs-pie print-button" title="Print">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie remove-highlight-button" title="Remove Highlights">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                                <div>
+                                                                    <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                                        <div class="button-icon"> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="footer" xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd"><span class="mc-variable Default.Product variable" xmlns="">Sentinel</span>&#160;<span class="mc-variable Default.Release variable" xmlns="">8.4</span>&#160;<span class="mc-variable Default.ProjectTitle variable" xmlns="">Licensing API (.NET)</span><br xmlns="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> <span class="mc-variable Default.Copyright variable" xmlns="">© 2022</span> <span class="mc-variable Default.CompanyNameLong variable" xmlns="">Thales Group</span>. All rights reserved.&#160;&#160;|&#160;&#160;<span class="mc-variable Default.PartNumber variable" xmlns="">007-013811-003</span>&#160;<span class="mc-variable Default.Revision variable" xmlns="">Revision B</span>&#160;&#160;|&#160;&#160;Last updated: <span class="mc-variable Default.DateLong variable" xmlns="">19 April 2022</span>&#160;&#160;|&#160;&#160;<a href="https://supportportal.thalesgroup.com/csm?id=sentinel" target="_blank" xmlns="">Support</a>&#160;&#160;&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

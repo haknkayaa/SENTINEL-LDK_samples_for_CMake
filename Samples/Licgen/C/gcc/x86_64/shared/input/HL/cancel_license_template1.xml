@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sentinel_ldk:license schema_version="1.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:sentinel_ldk="http://www.safenet-inc.com/sentinelldk">
+   <acknowledgement_request>Yes</acknowledgement_request>
+   <enforcement_type>HL</enforcement_type>
+   <product>
+      <id>1</id>
+      <name>Sample Product</name>
+      <feature action="cancel">
+         <id>5</id>
+      </feature>
+   </product>
+</sentinel_ldk:license>

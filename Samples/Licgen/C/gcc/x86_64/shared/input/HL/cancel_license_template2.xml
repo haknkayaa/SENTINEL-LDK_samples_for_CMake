@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <sentinel_ldk:license schema_version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sentinel_ldk="http://www.safenet-inc.com/sentinelldk">
+    <enforcement_type>HL</enforcement_type>
+    <dynamic_resource>
+	  <!--Remove dynamic memory file-id 2 from the key-->
+      <isv_memory action = "cancel">
+         <file_id>2</file_id>
+      </isv_memory>
+	  <!--Remove dynamic memory file-id 3 from the key-->
+      <isv_memory action = "cancel">
+         <file_id>3</file_id>
+      </isv_memory>
+    </dynamic_resource>	
+ </sentinel_ldk:license>

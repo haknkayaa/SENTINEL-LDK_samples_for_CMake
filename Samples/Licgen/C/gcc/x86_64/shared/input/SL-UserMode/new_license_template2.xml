@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sentinel_ldk:license schema_version="1.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:sentinel_ldk="http://www.safenet-inc.com/sentinelldk">
+   <acknowledgement_request>Yes</acknowledgement_request>
+   <enforcement_type>SL-UserMode</enforcement_type>
+   <product>
+      <id>1</id>
+      <name>Sample Product</name>
+      <feature>
+         <id>11</id>
+         <name>Sample Feature 11</name>
+         <license_properties>
+            <perpetual/>
+         </license_properties>
+      </feature>
+      <feature>
+         <id>12</id>
+         <name>Sample Feature 12</name>
+         <license_properties>
+            <expiration_date>2025-12-31</expiration_date>
+         </license_properties>
+      </feature>
+      <feature>
+         <id>13</id>
+         <name>Sample Feature 13</name>
+         <license_properties>
+            <expiration_date>2030-12-31</expiration_date>
+         </license_properties>
+      </feature>
+      <!-- Add as many feature node as many you want to license in a product-->
+   </product>
+   <!-- Add as many product node as many you want to put into a single license -->
+</sentinel_ldk:license>

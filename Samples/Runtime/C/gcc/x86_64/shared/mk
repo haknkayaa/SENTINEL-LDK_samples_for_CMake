@@ -1,0 +1,26 @@
+#!/bin/sh
+
+case $(uname -m) in
+   x86_64);;
+   *) echo "This script is intended to be executed on a x86_64 system."
+      echo "Running it on another platform probably doesn't work unless"
+      echo "a cross compiler is installed (and this script is modified"
+      echo "to reflect this)."
+      exit 1;;
+esac
+
+clear
+rm hasp_demo
+rm hasp_update
+
+echo --------------------------------------------------------------------------
+gcc ../../../hasp_demo.c -I../../.. -Wl,-rpath,'$ORIGIN' libhasp_linux_x86_64_demo.so -lpthread -o hasp_demo
+ls -l hasp_demo
+echo --------------------------------------------------------------------------
+gcc ../../../hasp_update.c -I../../.. -Wl,-rpath,'$ORIGIN' libhasp_linux_x86_64_demo.so -lpthread -o hasp_update
+ls -l hasp_update
+echo --------------------------------------------------------------------------
+
+echo
+sync
+

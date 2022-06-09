@@ -1,0 +1,239 @@
+/*<meta />*/
+
+@media only screen and (max-width: 900px)
+{
+	/* Search Styles */
+
+	.search-bar .search-filter
+	{
+		font-size: 1em;
+	}
+
+	.button.login-button.feedback-required,
+	.button.edit-user-profile-button.feedback-required
+	{
+		display: none;
+	}
+
+	.pulse-frame
+	{
+		display: none;
+	}
+
+	.central-account-text
+	{
+		display: none;
+	}
+
+	.buttons._Skins_Components_TOOLBAR.mc-component
+	{
+		
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button
+	{
+		background-repeat: no-repeat;
+		background: #555555;
+		background: -moz-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#555555));
+		background: -webkit-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -o-linear-gradient(top, #555555 0%,#555555 100%);
+		background: -ms-linear-gradient(top, #555555 0%,#555555 100%);
+		background: linear-gradient(top, #555555 0%,#555555 100%);
+		-pie-background: linear-gradient(#555555, #555555);
+		background-position: center center;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button > div
+	{
+		
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button .button-icon-wrapper
+	{
+		
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button .button-text
+	{
+		
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button.collapse-all-button
+	{
+		background-repeat: no-repeat;
+		background: #555555;
+		background: -moz-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#555555));
+		background: -webkit-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -o-linear-gradient(top, #555555 0%,#555555 100%);
+		background: -ms-linear-gradient(top, #555555 0%,#555555 100%);
+		background: linear-gradient(top, #555555 0%,#555555 100%);
+		-pie-background: linear-gradient(#555555, #555555);
+		background-position: center center;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button.current-topic-index-button
+	{
+		background-repeat: no-repeat;
+		background: #555555;
+		background: -moz-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#555555));
+		background: -webkit-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -o-linear-gradient(top, #555555 0%,#555555 100%);
+		background: -ms-linear-gradient(top, #555555 0%,#555555 100%);
+		background: linear-gradient(top, #555555 0%,#555555 100%);
+		-pie-background: linear-gradient(#555555, #555555);
+		background-position: center center;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button.expand-all-button
+	{
+		background-repeat: no-repeat;
+		background: #555555;
+		background: -moz-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#555555));
+		background: -webkit-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -o-linear-gradient(top, #555555 0%,#555555 100%);
+		background: -ms-linear-gradient(top, #555555 0%,#555555 100%);
+		background: linear-gradient(top, #555555 0%,#555555 100%);
+		-pie-background: linear-gradient(#555555, #555555);
+		background-position: center center;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button.login-button
+	{
+		background-repeat: no-repeat;
+		background: #555555;
+		background: -moz-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#555555));
+		background: -webkit-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -o-linear-gradient(top, #555555 0%,#555555 100%);
+		background: -ms-linear-gradient(top, #555555 0%,#555555 100%);
+		background: linear-gradient(top, #555555 0%,#555555 100%);
+		-pie-background: linear-gradient(#555555, #555555);
+		background-position: center center;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button.next-topic-button
+	{
+		background-repeat: no-repeat;
+		background: #555555;
+		background: -moz-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#555555));
+		background: -webkit-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -o-linear-gradient(top, #555555 0%,#555555 100%);
+		background: -ms-linear-gradient(top, #555555 0%,#555555 100%);
+		background: linear-gradient(top, #555555 0%,#555555 100%);
+		-pie-background: linear-gradient(#555555, #555555);
+		background-position: center center;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button.previous-topic-button
+	{
+		background-repeat: no-repeat;
+		background: #555555;
+		background: -moz-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#555555));
+		background: -webkit-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -o-linear-gradient(top, #555555 0%,#555555 100%);
+		background: -ms-linear-gradient(top, #555555 0%,#555555 100%);
+		background: linear-gradient(top, #555555 0%,#555555 100%);
+		-pie-background: linear-gradient(#555555, #555555);
+		background-position: center center;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button.print-button
+	{
+		background-repeat: no-repeat;
+		background: #555555;
+		background: -moz-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#555555));
+		background: -webkit-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -o-linear-gradient(top, #555555 0%,#555555 100%);
+		background: -ms-linear-gradient(top, #555555 0%,#555555 100%);
+		background: linear-gradient(top, #555555 0%,#555555 100%);
+		-pie-background: linear-gradient(#555555, #555555);
+		background-position: center center;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button.remove-highlight-button
+	{
+		background-repeat: no-repeat;
+		background: #555555;
+		background: -moz-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#555555));
+		background: -webkit-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -o-linear-gradient(top, #555555 0%,#555555 100%);
+		background: -ms-linear-gradient(top, #555555 0%,#555555 100%);
+		background: linear-gradient(top, #555555 0%,#555555 100%);
+		-pie-background: linear-gradient(#555555, #555555);
+		background-position: center center;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button.select-language-button
+	{
+		background-repeat: no-repeat;
+		background: #555555;
+		background: -moz-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#555555));
+		background: -webkit-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -o-linear-gradient(top, #555555 0%,#555555 100%);
+		background: -ms-linear-gradient(top, #555555 0%,#555555 100%);
+		background: linear-gradient(top, #555555 0%,#555555 100%);
+		-pie-background: linear-gradient(#555555, #555555);
+		background-position: center center;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button.select-skin-button
+	{
+		background-repeat: no-repeat;
+		background: #555555;
+		background: -moz-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#555555));
+		background: -webkit-linear-gradient(top, #555555 0%, #555555 100%);
+		background: -o-linear-gradient(top, #555555 0%,#555555 100%);
+		background: -ms-linear-gradient(top, #555555 0%,#555555 100%);
+		background: linear-gradient(top, #555555 0%,#555555 100%);
+		-pie-background: linear-gradient(#555555, #555555);
+		background-position: center center;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button.topic-ratings-empty-button
+	{
+		background: transparent url('Images/star-empty.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/star-empty.png') no-repeat center center;
+		background-size: 16px 16px;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .toolbar-button-drop-down
+	{
+		background-color: #FFFFFF;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .toolbar-button-drop-down.select-language-drop-down
+	{
+		background-color: #FFFFFF;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .toolbar-button-drop-down.select-language-drop-down ul li:hover
+	{
+		background-color: #E5EFF7;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .toolbar-button-drop-down.select-skin-drop-down
+	{
+		background-color: #FFFFFF;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .toolbar-button-drop-down.select-skin-drop-down ul li:hover
+	{
+		background-color: #E5EFF7;
+	}
+
+	._Skins_Components_TOOLBAR.mc-component .button-separator
+	{
+		background-color: #e1e1e1;
+	}
+}
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us" xml:lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="icon" type="image/x-icon" href="https://docs.sentinel.thalesgroup.com/favicon.ico" /><title>Sentinel LDK Android Envelope Jar and Sample: Readme</title>
+    </head>
+    <body style="font: normal normal normal smaller;font-family: &quot;Times New Roman&quot;, Times, serif;background-color: White;Color: Black;margin: 16px;margin-top: 16px;margin-right: 16px;margin-bottom: 16px;margin-left: 16px;">
+        <h1 style="font: normal normal bold 175% sans-serif;font-size: 175%;font-style: normal;font-variant: normal;font-weight: normal;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #242A75;">Sentinel® LDK&#160;Envelope - Protecting a Python Application: Readme</h1>
+        <hr align="center" width="100%" size="0" />
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">This document describes using Sentinel LDK Envelope to protect a Python application.</p>
+        <h2 style="font: normal normal bold 150%;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #000000;font-weight: normal;">Overview</h2>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">The following methods exist to protect Python applications using Sentinel LDK Envelope:</p>
+        <ol>
+            <li value="1" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Sentinel LDK Envelope with Sentinel LDK Data File Protection (DFP)</p>
+                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">This method protects Python applications by combining Sentinel LDK Envelope with 
+the Data File Encryption utility (<b>dfcrypt</b>) using the <b>Version 2</b> data protection mode. This method works by treating the application's Python code as encrypted data files that are accessed by a Python interpreter that is protected by Envelope.</p>
+            </li>
+            <li value="2" style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">
+                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">Cython (<a href="https://cython.org/" style="text-decoration: none;">https://cython.org/</a>) followed by Sentinel LDK Envelope</p>
+                <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">This method protects Python applications by combining Cython with Sentinel LDK Envelope. This works by first translating your sensitive Python modules into native modules (PYD/SO files) which are then protected using Envelope.</p>
+            </li>
+        </ol>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">These methods can be used on a Windows or Linux platform.</p>
+        <ul style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;list-style-type: square;list-style-position: outside;text-align: left;margin: 16px;margin-top: 16px;margin-right: 16px;margin-bottom: 16px;margin-left: 16px;">
+            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">To see how to protect the sample Python application under Linux, see the appendix in the Sentinel LDK Envelope for Linux User Guide .</li>
+            <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"> </p>
+            <li style="font: normal normal normal 100%;font-family: &quot;Times New Roman&quot;, Times, serif;text-align: left;">To see how to protect the sample Python application under Windows, see the topic "Protecting Python Applications" in the Sentinel LDK Envelope help system for Windows.</li>
+        </ul>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;">&#160;</p>
+        <p style="font-family: &quot;Times New Roman&quot;, Times, serif;"><span style="font-family: 'Palatino Linotype';color: #000000;">Copyright © 2022 Thales Group. All rights reserved. <a href="https://supportportal.thalesgroup.com/csm?id=sentinel" target="_blank" style="text-decoration: none;">Support</a>&#160;&#160;&#160;<br /></span>
+        </p>
+        <div align="right">DocID 251 Revision 2003-2</div>
+    </body>
+</html>

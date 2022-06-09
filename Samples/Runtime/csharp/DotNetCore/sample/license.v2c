@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<hasp_info>
+
+  <description/>
+
+  <!--DO NOT MODIFY ANY INFORMATION BELOW HERE, YOUR LICENSE WILL BECOME INVALID-->
+
+  <haspscope>
+    <vendor id="37515">
+      <hasp id="18446744073709551615"/>
+    </vendor>
+  </haspscope>
+
+  <v2c_content>
+    <enforcement_type>SL-AdminMode</enforcement_type>
+    <update_counter>0</update_counter>
+    <v2c_readable>
+      <product>
+        <id>123</id>
+        <name>Sample Product 123</name>
+        <feature>
+          <id>1000</id>
+          <name>Sample Feature 1000</name>
+          <license_properties>
+            <days_to_expiration>30</days_to_expiration>
+            <remote_desktop_access>Yes</remote_desktop_access>
+            <virtual_machine_access>No</virtual_machine_access>
+          </license_properties>
+        </feature>
+      </product>
+      <product>
+        <id>0</id>
+        <name/>
+        <feature>
+          <id>0</id>
+          <name/>
+          <license_properties>
+            <perpetual/>
+            <remote_desktop_access>Yes</remote_desktop_access>
+            <virtual_machine_access>No</virtual_machine_access>
+          </license_properties>
+        </feature>
+      </product>
+    </v2c_readable>
+    <signature>RVozrhI8BMTkelXNWiq//h0tWKXG6cRjfJozt9ViD4S+AFK2iWL/3mv7tsNZJZ7ZOlEcnWbJa/BnFPuvR0S/PaBs9wnRGoLKLEWWzaCskvHdj4tXbyo/2DSSXyI3i9SpxBgwwFDk0D5GbcQ37I6tbqZtVeB7lk1CS0ok+V3Ptrggeq2oAV2dC5HXVnyGS1ZnWH3cz447NR96cVpv2UICF4hHJEAEjIfmrIlGp7D0VFbYVX6GF3yIaUXQnyAOzLCXrlGhGcBcAqQLjxfQhgeConahFzIiRuqkgZA8XONrrPJHM9BIgTC2Vcygm1xm/4n54jKWZPElbG2ci1tte+UF6Q==</signature>
+  </v2c_content>
+
+  <v2c>
+YoIGPqCCBjWABHZ0YzKBggImlN5e89nLxr0WMRCE9IBSfu8axezbdJpY8L2DURZ4ATdMovT4BUKe
+6DgRh51Cw3/xsVGa5RSIcH5ZIPSxt2uoq8A895P+bNSSqRrocR4fXzlq96Te7GTvxA97wYpbOE3U
+C9bwYGMdMdXUKbdxdbVnX5B7sWYzJf2/FWVWcemjDbE9oslr7kRIhPOcuO+GMyd7c4l/gZtB7sSh
+U5LjMHOo80z9Lm/L3o9Tx6lW6kKFKEvkfJh6sAbcDXyMjS2VCmC0ZlM8U3nZeX9ZwbQQQIVx/nAA
+Mb+IFbc/AWuuXggWnBpyLYj/Dwu9WwcuV7T5RWdofvHNpSYo0qdvgNqzJCzu9mwKA6JkFnEHy841
+T7dWBZmzQ1Y+t8KfVXobMjqidxxyrxXrvcIlYvx4Byjwj7JdazFsFATSw9tcwHhGd/jzFB5SX2qV
+B3M3Z3opTiFAGC+5K2HaxTXvW6RshG9G2DxprqDPVIl2ilXzRRRq0zhV6yY2FruNZV21BChaGCjh
+DTi4x+h+J6ONE82lQqj1oqb+sLJo7A/OZ2BVtDqIhLjee2e2FbWZ9pzzqfTwCdWO7BFVkuX+tBwO
+AoFQaH7naZ+0YGeJiOP0sdGUz1ssrZLHOUc4wBCMLzhug7Wgbb7jFnQftRAFDC47CZNiolNCork9
+VMJZHzl081MTTbb+XjgV6qRNBmc6FeB3oUcUEbTJTpHVLgYstP2BqhIl8g9EytNYGXTJKegsHoIB
+AIUBAYYDAJKLpIID9oAJAP//////////gQEEpoIDnYAJAP//////////oRyhGoAFANDp5GCBAwCZ
+LIICRz+DCIId40zWOwe5o4ICZoAQ47y12jqC/gMd05DMeIngmYGCAlBz1ppVrOTQJT38WVyhJPJ5
+ZwD/VkFFExEw5PBbOcDcJM4DTvqI8o8uTBYiO4Fztw+9aVLj2T1WgV6IuzL2fJRSoefYIIwoAhIi
+UwAUuX9O/7iUiZ50kpX3nTJOhvSKgEM3Jh8dUx+1f+BXXDXR6iJxfYCGB0Wznbq9lTgJAy9i+G8A
+ug4NnrVusGdYlBalDHeeV8ptQyP5hvCv0vai67ndTD1gOIaqmspXe06KG4bUsgsqP8I6BFXAlC+h
+tpG3POZRMeHYAPjERnee054tBXLwk4mGswFG4VmdW7lIaxoSWIzEpK5IXQ2VjmQMcbASNs3I6nqQ
+rfxenSZN3VP3aUB3C/3/KTmFnbX0TrfV6IUXQag80kf+yIp16C1GQWXNijSp00NMOMD6sttwg/uY
+9tUXHH3GpnQXQGLOdXwyG3IdIs1AqlvoTP1YVyBHVyAH8h53kl8LjdlxfKgzIqqZ75FhSzQLVWJQ
+zY2H82Do3SSxRwJzHwEAcs8VVzwUrZEeeDQCK6SqW081d9FyfGu/wOpTVuDesET+6F8o1pqo9gR4
+BFtbEKg63IP7QE5zMOyzYDPLQFcBDZ0+TZ90wVPs6fanNqxCbO2XYkf/mmAWlRZCp6itzxB2fvAy
+BACukmfTEgGscs5Lb9ak0n+mlGr6522ld9sMvlUjxEVVjSTtB9hnVAQQl7YprHMxmko9EvxGTLzO
+oab8YARmvDRFAqMqjnAH3SDH2yMSnAiNVJQBvoDxbyR8+wzPjAu4+irrIegcK/81f6Jm0ILq7vTT
+xDwU+YcshwEBiAEAioIBAICX46u/Q9wB1aaX/zL7G0oTIiVnkyjzStGI0u1RpEDmuvBB2Qs8WP6m
+/CpbZ8oTSJXsrpYLLUjFRXjAIXLpiKMWQlhpGBhlSgfE/+n1dlTZiBDYxiGED6hEMfJ5iY622mTt
+5w5WIMbj81tDES7CtgpMETkR2VMIIHOSuVV6rxM7YL/i4W2FLrLCm1s1T6kUUtmf9ANoxVGXlVGo
+OSOAdX3OSLN0i3Lfpj8s96faK/TMhf1hXMdCkG28KXE1TE/P74iJ3/3vQ1Bl0ag2pHzcJ0dAGUDA
+mFSvm265qCIUmNl9pw/c+DiabCRMgtkuuT11pjjwuLnrqEJ48JGWSzTcZEaEAQSlQqAFgAMAkouh
+GIABe4ETU2FtcGxlIFByb2R1Y3QgMTIzAKIDgAEAoxqAAgPogRRTYW1wbGUgRmVhdHVyZSAxMDAw
+AKEDgAEA</v2c>
+
+</hasp_info>
